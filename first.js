@@ -3,3 +3,5 @@ console.log(jeden+dwa);
 
 var mood="klimat";
 console.log(mood);
+
+alert("hello");
