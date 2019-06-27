@@ -15,6 +15,8 @@ str.match(/ab/);
 const str1="React";
 const newStr="abcde".substr(1,2);
 
+console.log(str1.length);
+
 // pattern regex
 
 const str2="A";
