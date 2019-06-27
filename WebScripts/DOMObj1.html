@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="window.alert('hello');">
+<script>
+    const transcont=document.createElement('div');
+    transcont.setAttribute('id','main');
+    const content=document.createTextNode('Trans');
+    transcont.appendChild(content);
+    document.body.appendChild(transcont);
+    const main=document.getElementById('main');
+    console.log(main,main.offsetWidth,main.offsetHeight);
+</script>
+</body>
+</html>
