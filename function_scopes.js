@@ -120,3 +120,18 @@ var bb=vv();
 console.log(bb[1]());
 (function(){ for(var i in bb){console.log(bb[i]())}; })();
 
+function xxx(){
+    console.log('aaa');
+    return function(){
+        return 'wew';
+    };
+};
+console.log(xxx());
+console.log('-----------');
+console.log(xxx()());
+console.log('-----------');
+
+var wew=xxx();
+console.log('-----------');
+
+console.log(wew());
