@@ -29,7 +29,9 @@ console.log(n);
 var g=n.slice(0,4);
 console.log(g);
 console.log(g.pop());
-console.log(n.splice(0,2))
+console.log(n.splice(0,2));
+
+
 
 
 

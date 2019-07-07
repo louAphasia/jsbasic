@@ -1,59 +1,63 @@
-// konstruktor Function
+var b1=new Boolean(true);
+console.log(typeof b1);
+console.log(typeof b1.valueOf());
 
-var suma=new Function('a,b','return a+b;');
-console.log(suma(2,3));
+Boolean(b1);
+console.log(typeof b1);
+var b2=new Boolean(false);
+var b3=false;
+console.log(typeof b3);
+console.log('false boolean  '+Boolean(b3));
 
-var arg=new Function('a,b,c,d','return arguments;');
-console.log(arg(2,3,44,55));
+console.log("false object  "+Boolean(b2));
 
-console.log(suma.length, arg.length);
-function ccc(){
-    return 'aaa';
-};
-console.log(suma.constructor, ccc.constructor);
-console.log('-----------------------------------');
-//caller metoda
+// Number
+console.log('-----------number object ');
 
-function A(){return A.caller};
-function B(){
-return A()};
+var nr=Number('255');
+console.log(typeof nr);
+var obnr=new Number('2345.2345');
+console.log(typeof obnr);
 
-console.log(B());
-console.log(A.caller); //nie moze z zewnatrz funkcji wewnetrznej A funckja zwraca kto ja wywoluje
-//przydatne kto ja wywolal to funkcja ma sie zachowywac odmiennie
+console.log(obnr.toFixed(7));
+console.log(obnr.toExponential());
+console.log(obnr.toPrecision(4));
 
-console.log('METODY FUNCTION-----------------------------------');
-function abc(a,b,c){
-    return arguments;
-};
-console.log(B.toString());
+var s=nr.toString(16);
+console.log(s);
 
-var obiekt={
-    name:"tom",
-    mow: function(who){
-        return console.log(who+this.name);}
-    };
-obiekt.mow('uuu');
+//String
+console.log('--------------Strings');
 
-var my={
-    name: 'luki'
-};
-obiekt.mow.call(my,'yyy');
-obiekt.mow.call('','un');
+var stringus='daneproste';
+var obstring=new String('objekt');
+console.log(typeof stringus);
+console.log(typeof obstring);
 
-obiekt.mow.apply(my,['my'])
-obiekt.mow.call(my,['my'])
-// arguments
-function s(x,y){ return arguments.length};
-console.log(s(2,5));
-function r(x,y){ return arguments.callee};
-console.log(r(2,5));
+console.log(stringus[0]);
+console.log(obstring[2]);
+console.log(obstring.length, stringus.length);
 
-(
-    function(count){
-        if (count<5){
-            console.log(count);
-            arguments.callee(++count);
-        }
-    }
-)(3);
+'bezkonstruktora'.length;
+console.log('bezkon'[2]);
+
+console.log(Boolean(""), Boolean(new String("")));
+// "" to typ prosty false  a KAZDY OBIEKT TO true
+
+var str=new String("very small Small");
+var pro=str.toString();
+console.log(typeof pro);
+console.log(str.toUpperCase());
+console.log(str.charAt(5), pro.charAt(2)); //to samo co str[5]  i pro[2]
+console.log(str.indexOf('ma'), str.lastIndexOf('ma'),str.indexOf('i'));
+var sli=str.slice(1,str.length-1);
+console.log(str.substring(0,2));
+var sub=str.substring(2,0);
+console.log(sli,"-----",sub);
+
+var splitt=str.split('s');
+console.log(splitt);
+var jjj=splitt.join('xxx');
+console.log(jjj);
+var mmm=str.concat(" not so much");
+console.log(mmm);
