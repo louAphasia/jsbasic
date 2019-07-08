@@ -7,7 +7,7 @@ var losbig=Math.random()*1000;
 console.log(los, losbig);
 var minmax=10*Math.random()+5; // od 5 do 15
 // min i max [ (max-min)* Math.random()+min
-var testowa=5.34456;
+var testowa=5.5;
 console.log( Math.round(testowa), '-----', Math.floor(testowa), "------", Math.ceil(testowa));
 
 var input=15;

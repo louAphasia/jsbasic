@@ -57,3 +57,26 @@ console.log(r(2,5));
         }
     }
 )(1);
+
+console.log('-------------- sum up ');
+
+function FF(){
+    function C(){
+        return this; // obiekt global odnosi się
+    }
+    return C();
+}
+
+function CC(){
+    return this
+}
+var o=new FF();
+var oo=new CC();
+console.log(oo);
+console.log(o);
+
+function BB(){
+    this.a=1;
+    return false;
+}
+console.log(new BB()); // return object type a BB{ a:1}

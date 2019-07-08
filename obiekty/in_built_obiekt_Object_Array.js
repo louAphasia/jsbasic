@@ -31,7 +31,9 @@ console.log(g);
 console.log(g.pop());
 console.log(n.splice(0,2));
 
-
+var ar=[1,. 2,[1,2]];
+console.log(ar.sort());
+console.log(ar.join('__'));
 
 
 
