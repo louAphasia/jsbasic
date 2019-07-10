@@ -4,9 +4,6 @@
     <list default="true" id="22ff30d6-f8dd-484a-8c73-e01fcf88b635" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obiekty/Prototypy_js.js" beforeDir="false" afterPath="$PROJECT_DIR$/obiekty/Prototypy_js.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obiekty/in_built_ob_Function.js" beforeDir="false" afterPath="$PROJECT_DIR$/obiekty/in_built_ob_Function.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obiekty/in_built_ob_Math_Date.js" beforeDir="false" afterPath="$PROJECT_DIR$/obiekty/in_built_ob_Math_Date.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obiekty/in_built_obiekt_Object_Array.js" beforeDir="false" afterPath="$PROJECT_DIR$/obiekty/in_built_obiekt_Object_Array.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -68,8 +65,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/obiekty/Prototypy_js.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="72" column="120" selection-start-line="72" selection-start-column="120" selection-end-line="72" selection-end-column="120" />
+            <state relative-caret-position="262">
+              <caret line="146" column="22" selection-start-line="146" selection-start-column="22" selection-end-line="146" selection-end-column="22" />
               <folding>
                 <element signature="e#11#96#0" />
                 <element signature="e#50#94#0" />
@@ -271,7 +268,7 @@
       <workItem from="1560942656918" duration="8756000" />
       <workItem from="1562145221895" duration="43149000" />
       <workItem from="1562489171644" duration="16173000" />
-      <workItem from="1562575821787" duration="6070000" />
+      <workItem from="1562575821787" duration="10927000" />
     </task>
     <task id="LOCAL-00001" summary="function">
       <created>1562266329569</created>
@@ -308,11 +305,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562525726600</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="prototype 1">
+      <created>1562617585780</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1562617585780</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75509000" />
+    <option name="totallyTimeSpent" value="80366000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -323,7 +327,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.40882352" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.45735294" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -346,7 +350,8 @@
     <MESSAGE value=" function" />
     <MESSAGE value="regexp" />
     <MESSAGE value="error ob" />
-    <option name="LAST_COMMIT_MESSAGE" value="error ob" />
+    <MESSAGE value="prototype 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="prototype 1" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DataObj.js">
@@ -471,8 +476,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/obiekty/Prototypy_js.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="72" column="120" selection-start-line="72" selection-start-column="120" selection-end-line="72" selection-end-column="120" />
+        <state relative-caret-position="262">
+          <caret line="146" column="22" selection-start-line="146" selection-start-column="22" selection-end-line="146" selection-end-column="22" />
           <folding>
             <element signature="e#11#96#0" />
             <element signature="e#50#94#0" />

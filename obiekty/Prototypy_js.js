@@ -75,3 +75,73 @@ console.log(no.propertyIsEnumerable('DATE'));  // false mimo ze ponizej jest wyl
 for(var pole in no){
     console.log(pole + "=" + no[pole]);
 }
+//jak sprawdzic czy jest wyliczalne pole z lancucha prototypow a nie wlasne
+console.log(no.constructor.prototype.propertyIsEnumerable('DATE'));  //TERAZ JEST TRUE
+console.log(no.isPrototypeOf('DATE')); //BO DATE POWSTAŁO ZA POMOCA PROTOTYPE WLASNE JEST TYLKO  color name
+
+console.log('--------------------------');
+//czy konkretny obiekt jest protoypem innego
+var kotek={
+    cute:true,
+    eat:'royal',
+    drink:'water'
+};
+//tworzymy konstruktor
+function Animal(name){
+    this.name=name;
+};
+
+function Tiger(){};
+
+function Lion(){};
+
+Lion.prototype=Object.create(Tiger.prototype);
+var lion=new Lion();
+
+console.log(Tiger.prototype.isPrototypeOf(lion));
+
+
+    Animal.prototype=kotek;
+
+
+var tiger=new Animal('kot');
+console.log(kotek.isPrototypeOf(tiger));
+
+// ukryte powiazanie
+var ape= new Animal('czlowiek');
+ape.drink='wszystko';
+ape.cute=false;
+ape.nowacecha='java';
+console.log(ape.nowacecha, ape.drink);
+// pole eat nie jest wlasnym polem ape zostaje sprowadzone z prototypu
+console.log(ape.eat);
+ // pokaze pola prototypu  prototype pole konstruktora a __proto__ pole instancju
+console.log(ape.__proto__);
+
+console.log(ape.constructor); //function object
+console.log(typeof ape.constructor.prototype); //object
+ape.constructor='nic';
+console.log(ape.eat);  //nadal jest powiazanie
+console.log(ape.constructor.prototype); // nadal powiazanie jest ale typ konstruktora undefinded
+console.log(ape.constructor);  //nic
+console.log(ape.__proto__);
+// dodawanie do prototypow pol objektów wbudowanych np Array
+
+Array.prototype.inArray=function (n) {
+    for(var i=0, len=this.length; i<len;i++){
+        if(this[i]===n){
+            return true;
+        }
+    }
+    return false;
+};
+
+var t=[1,33,44,55];
+console.log(t.inArray(33), t.inArray('red'));
+
+String.prototype.reverse=function(){
+    return Array.prototype.reverse.apply(this.split("")).join('');
+};
+
+var s='abcdefghij';
+console.log(s.reverse());
