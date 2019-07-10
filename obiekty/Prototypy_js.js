@@ -145,3 +145,33 @@ String.prototype.reverse=function(){
 
 var s='abcdefghij';
 console.log(s.reverse());
+
+// Pulapki z prototypami
+function Dog(){ this.ogon=true;};
+var pies=new Dog();
+var Haund=new Dog();
+
+Dog.prototype.hau=function(){
+    return "Hau";
+};
+console.log(pies.hau());
+console.log(pies.constructor);
+console.log(pies.constructor.prototype.constructor);
+
+//nadpisanie prototype
+Dog.prototype={ cute: true, bark: "hauaaa"};
+console.log(pies.hau());
+var lessi=new Dog();
+//console.log(lessi.hau());  typeerror nie ma dostepu
+console.log(lessi.cute, lessi.ogon); //ma dostep do pola wlasnego dog ogon i nadpisanego protoypu
+
+console.log(pies.constructor);
+console.log(lessi.constructor); // object  a jest nadpisany pies  dlatego przy nadpisaniu trzeba dopisac
+Dog.prototype.constructor=Dog;
+console.log(lessi.constructor); // i teraz wskazuje poprawnie
+console.log(lessi.ogon);
+console.log(pies.constructor.prototype.bark);
+
+
+
+
