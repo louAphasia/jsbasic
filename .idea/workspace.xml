@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="22ff30d6-f8dd-484a-8c73-e01fcf88b635" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obiekty/Inheritance_js.js" beforeDir="false" afterPath="$PROJECT_DIR$/obiekty/Inheritance_js.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obiekty/Prototypy_js.js" beforeDir="false" afterPath="$PROJECT_DIR$/obiekty/Prototypy_js.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,7 +21,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/obiekty/in_built_obiekt_Object_Array.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="759">
               <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
             </state>
           </provider>
@@ -29,7 +30,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/obiekty/in_built_ob_Function.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
+            <state relative-caret-position="1725">
               <caret line="75" column="15" selection-start-line="75" selection-start-column="15" selection-end-line="75" selection-end-column="15" />
             </state>
           </provider>
@@ -62,28 +63,28 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/obiekty/Prototypy_js.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="146" column="22" selection-start-line="146" selection-start-column="22" selection-end-line="146" selection-end-column="22" />
+            <state relative-caret-position="228">
+              <caret line="189" column="14" lean-forward="true" selection-start-line="189" selection-start-column="14" selection-end-line="189" selection-end-column="14" />
               <folding>
                 <element signature="e#11#96#0" />
                 <element signature="e#50#94#0" />
-                <element signature="e#201#227#0" />
-                <element signature="n#!!block;n#Tool#0" />
-                <element signature="e#354#370#0" />
-                <element signature="e#494#502#0" />
-                <element signature="n#!!block;n#function#0" />
+                <element signature="e#283#407#0" />
                 <element signature="e#761#810#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/obiekty/Inheritance_js.js">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="80" column="54" selection-start-line="80" selection-start-column="54" selection-end-line="80" selection-end-column="54" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -142,12 +143,12 @@
         <option value="$PROJECT_DIR$/obiekty/in_build_ob_Function.js" />
         <option value="$PROJECT_DIR$/obiekty/in_built_ob_Number_Boolean_String.js" />
         <option value="$PROJECT_DIR$/obiekty/built_in_ob_RegExp.js" />
-        <option value="$PROJECT_DIR$/obiekty/Inheritance_js.js" />
         <option value="$PROJECT_DIR$/obiekty/built_in_ob_Error.js" />
         <option value="$PROJECT_DIR$/obiekty/in_built_ob_Math_Date.js" />
         <option value="$PROJECT_DIR$/obiekty/in_built_ob_Function.js" />
         <option value="$PROJECT_DIR$/obiekty/in_built_obiekt_Object_Array.js" />
         <option value="$PROJECT_DIR$/obiekty/Prototypy_js.js" />
+        <option value="$PROJECT_DIR$/obiekty/Inheritance_js.js" />
       </list>
     </option>
   </component>
@@ -221,11 +222,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.Prototypy_js.js">
-    <configuration name="Prototypy_js.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/obiekty/Prototypy_js.js" working-dir="$PROJECT_DIR$">
+  <component name="RunManager" selected="Node.js.Inheritance_js.js">
+    <configuration name="Inheritance_js.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/obiekty/Inheritance_js.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="built_in_ob_Error.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/obiekty/built_in_ob_Error.js" working-dir="$PROJECT_DIR$">
+    <configuration name="Prototypy_js.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/obiekty/Prototypy_js.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="in_built_ob_Function.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/obiekty/in_built_ob_Function.js" working-dir="$PROJECT_DIR$">
@@ -240,17 +241,17 @@
     <list>
       <item itemvalue="Node.js.in_built_ob_Function.js" />
       <item itemvalue="Node.js.in_built_ob_Math_Date.js" />
-      <item itemvalue="Node.js.built_in_ob_Error.js" />
       <item itemvalue="Node.js.Prototypy_js.js" />
       <item itemvalue="Node.js.in_built_obiekt_Object_Array.js" />
+      <item itemvalue="Node.js.Inheritance_js.js" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.Inheritance_js.js" />
         <item itemvalue="Node.js.Prototypy_js.js" />
         <item itemvalue="Node.js.in_built_obiekt_Object_Array.js" />
         <item itemvalue="Node.js.in_built_ob_Function.js" />
         <item itemvalue="Node.js.in_built_ob_Math_Date.js" />
-        <item itemvalue="Node.js.built_in_ob_Error.js" />
       </list>
     </recent_temporary>
   </component>
@@ -268,7 +269,8 @@
       <workItem from="1560942656918" duration="8756000" />
       <workItem from="1562145221895" duration="43149000" />
       <workItem from="1562489171644" duration="16173000" />
-      <workItem from="1562575821787" duration="10927000" />
+      <workItem from="1562575821787" duration="13527000" />
+      <workItem from="1562790229818" duration="8280000" />
     </task>
     <task id="LOCAL-00001" summary="function">
       <created>1562266329569</created>
@@ -312,22 +314,36 @@
       <option name="project" value="LOCAL" />
       <updated>1562617585780</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="prototype 2">
+      <created>1562776250065</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1562776250065</updated>
+    </task>
+    <task id="LOCAL-00008" summary="prototype 3">
+      <created>1562780277593</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1562780277593</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80366000" />
+    <option name="totallyTimeSpent" value="91246000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24983476" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13879709" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.45735294" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.40588236" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -351,7 +367,9 @@
     <MESSAGE value="regexp" />
     <MESSAGE value="error ob" />
     <MESSAGE value="prototype 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="prototype 1" />
+    <MESSAGE value="prototype 2" />
+    <MESSAGE value="prototype 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="prototype 3" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DataObj.js">
@@ -415,10 +433,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/obiekty/in_built_obiekt_Object_Array.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/obiekty/in_built_ob_Function.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1725">
+          <caret line="75" column="15" selection-start-line="75" selection-start-column="15" selection-end-line="75" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/obiekty/in_built_ob_Number_Boolean_String.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1426">
           <caret line="62" column="17" lean-forward="true" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/obiekty/in_built_ob_Math_Date.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -428,9 +467,6 @@
           <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/obiekty/Inheritance_js.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/obiekty/built_in_ob_RegExp.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -453,41 +489,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/obiekty/in_built_ob_Math_Date.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/obiekty/in_built_ob_Function.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="75" column="15" selection-start-line="75" selection-start-column="15" selection-end-line="75" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/obiekty/in_built_obiekt_Object_Array.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/obiekty/Prototypy_js.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="146" column="22" selection-start-line="146" selection-start-column="22" selection-end-line="146" selection-end-column="22" />
+        <state relative-caret-position="228">
+          <caret line="189" column="14" lean-forward="true" selection-start-line="189" selection-start-column="14" selection-end-line="189" selection-end-column="14" />
           <folding>
             <element signature="e#11#96#0" />
             <element signature="e#50#94#0" />
-            <element signature="e#201#227#0" />
-            <element signature="n#!!block;n#Tool#0" />
-            <element signature="e#354#370#0" />
-            <element signature="e#494#502#0" />
-            <element signature="n#!!block;n#function#0" />
+            <element signature="e#283#407#0" />
             <element signature="e#761#810#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/obiekty/Inheritance_js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="80" column="54" selection-start-line="80" selection-start-column="54" selection-end-line="80" selection-end-column="54" />
         </state>
       </provider>
     </entry>

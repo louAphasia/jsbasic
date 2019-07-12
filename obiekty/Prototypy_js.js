@@ -124,7 +124,7 @@ ape.constructor='nic';
 console.log(ape.eat);  //nadal jest powiazanie
 console.log(ape.constructor.prototype); // nadal powiazanie jest ale typ konstruktora undefinded
 console.log(ape.constructor);  //nic
-console.log(ape.__proto__);
+console.log('WYMIEN:',ape.__proto__);
 // dodawanie do prototypow pol objektów wbudowanych np Array
 
 Array.prototype.inArray=function (n) {
@@ -159,6 +159,7 @@ console.log(pies.constructor);
 console.log(pies.constructor.prototype.constructor);
 
 //nadpisanie prototype
+Dog.prototype.constructor=Dog;
 Dog.prototype={ cute: true, bark: "hauaaa"};
 console.log(pies.hau());
 var lessi=new Dog();
@@ -171,6 +172,26 @@ Dog.prototype.constructor=Dog;
 console.log(lessi.constructor); // i teraz wskazuje poprawnie
 console.log(lessi.ogon);
 console.log(pies.constructor.prototype.bark);
+console.log(pies.hau());
+console.log(pies.bark, lessi.bark);
+// WLASNE POLA wypisanie tylko a nie prototypu
+
+function Own(name){
+    this.cecha=true;
+    this.name=name
+    this.love=function(){
+        return console.log(name);
+    }
+}
+
+Own.prototype.hate=function () { return false};
+Own.prototype.bad=false;
+
+//tylko wlasne
+console.log(Object.create(new Own()).__proto__);
+//pola i metody tez prototypu
+console.log(Own.prototype);
+
 
 
 
