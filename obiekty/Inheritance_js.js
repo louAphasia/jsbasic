@@ -78,4 +78,40 @@ var b=new Boo();
 console.log(b.todo(), b.toDos());
 console.log(b instanceof Boo, b instanceof Ala, Boo.prototype.isPrototypeOf(b));
 
+var a= new Ala();
+console.log(b.na,'ala  obiekt',a.na, Boo.prototype.na, Ala.prototype.na); //wszystkie maja 1234 na przy Instancji tego nie ma
+
 console.log('--------KONSTRUKTOR TYMCZASOWY new F()');
+//rodzic
+function Father(){};
+Father.prototype.name="tim";
+Father.prototype.toStr=function(){
+    return this.name;
+};
+//child
+function Son(){};
+//konstruktor
+var F=function(){};
+F.prototype=Father.prototype;
+Son.prototype=new F();
+Son.prototype.constructor=Son;
+
+Son.prototype.name="jon";
+function grandson(age){ this.age=age;};
+
+F.prototype=Son.prototype;
+grandson.prototype=new F();
+grandson.prototype.constructor=grandson;
+
+grandson.prototype.name="kole";
+grandson.prototype.show=function(){ return this.name + this.age};
+
+var x=new grandson(11);
+console.log(x.toStr(), x.show())
+
+var s=new Son();
+
+console.log(x.__proto__.__proto__.__proto__.constructor);
+console.log(x.name, s.name);
+
+
