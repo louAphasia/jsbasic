@@ -111,7 +111,13 @@ console.log(x.toStr(), x.show())
 
 var s=new Son();
 
-console.log(x.__proto__.__proto__.__proto__.constructor);
+// __proto__ zmiana nowsze to samo Object.PrototypeOf()
+//console.log(Object.getPrototypeOf(g));
+
+console.log(x.__proto__.__proto__.constructor);
+console.log(Object.getPrototypeOf(x));
+
 console.log(x.name, s.name);
+
 
 
