@@ -117,9 +117,41 @@ var figura={
     toStr: function(){ return this.name}
 };
 
-var drugiOb=extendFromOb(figura);
+var drugiOb=extendFromOb(figura); //plytka COPY
 //trzeba jawnie przypisywac polom obiektu
 drugiOb.name='drugi';
 drugiOb.toStr=function(){
     return this.xess.toStr() + '.'+this.name;
-}
+};
+//DEEP COPY
+function extendDeep(p,c){
+    var c=c || {};
+    for(var i in p){
+        if(typeof p[i]==='object'){
+            c[i]=(p[i].constructor===Array)? []:{};
+            extendDeep(p[i],c[i]);
+        }else{
+            c[i]=p[i]
+        }
+    }
+    return c;
+};
+
+var pa={
+    lib:[111,2,3],
+    lit:["a","b"],
+    obj:{ pole:1},
+    bool:true};
+
+var deep=extendDeep(pa);
+var flat=extendFromOb(pa);
+
+console.log(deep.lib);
+deep.lib.push(2345);
+deep.lit=['123','ala'];
+console.log(pa.lib, deep.lit);
+//deep zmienia obiekty i pola tylko child wykonujac na child operacje
+//flat zmienia tez parent pola chyba ze calkowicie nadpiszesz
+console.log(flat.lib.push(234), pa.lib);
+flat.lib=[123,2345];
+console.log(flat.lib, pa.lib);
