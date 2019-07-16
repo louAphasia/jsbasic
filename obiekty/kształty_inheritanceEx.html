@@ -43,7 +43,7 @@
             ctx.beginPath();
             ctx.moveTo(this.points[0].x,this.points[0].y);
             for(var i=1;i<this.points.length;i++){
-                ctx.lineTo(this.points[i].x,this.points[0].y);}
+                ctx.lineTo(this.points[i].x,this.points[i].y);}
 
                 ctx.closePath() ;
                 ctx.stroke();
@@ -106,6 +106,9 @@
         Rect.call(this,p,side,side)
     }
     //-----DZIEDZICZENIE
+
+function start() {
+
     (function () {
         var s=new Shape();
         Tri.prototype=s;
@@ -113,9 +116,6 @@
         Square.prototype=s;
 
     })();
-function start() {
-
-
     var p1 = new Point(100, 100);
     var p2 = new Point(300, 100);
     var p3 = new Point(200, 0);
