@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
 </head>
-<body>
-<canvas height="600" width="800" id="canvas"/>
+<body onload="start();">
+<canvas height="600" width="800" id="canvas">
+</canvas>
 <script type="text/javascript">
     //konstruktor point
     function Point(x,y) {
@@ -38,14 +40,13 @@
         //metoda rysujaca figure przechodzaca przez points
         draw:function () {
             var ctx=this.context;
-            cyx.strokeStyle=this.getColor();
             ctx.beginPath();
             ctx.moveTo(this.points[0].x,this.points[0].y);
             for(var i=1;i<this.points.length;i++){
-                ctx.lineTo(this.points[i].,this.points[0].y)
+                ctx.lineTo(this.points[i].x,this.points[0].y);}
 
-ctx.closePath() ;
-            ctx.stroke()}
+                ctx.closePath() ;
+                ctx.stroke();
         },
         //metoda generujaca losowy kolor
         getColor:function () {
@@ -53,7 +54,7 @@ ctx.closePath() ;
             for(var i=0;i<3;i++){
                 rgb[i]=Math.round(255*Math.random());
             }
-            return 'rgb(' +rgb.join(',')+')'
+            return 'rgb(' + rgb.join(',')+')';
         },
         //metoda ktora przechodzi przez tablice punktow tworzy instancje Line i dodaje do this.lines
         getLines:function () {
@@ -62,7 +63,7 @@ ctx.closePath() ;
             }
             var lines=[];
             for(var i=0;i<this.points.length;i++){
-                lines[i]=new Linethis.points[i],(this.points[i+1])?this.points[i+1]:this.points[0]
+                lines[i]=new Line(this.points[i],(this.points[i+1])?this.points[i+1]:this.points[0]);
             }
             this.lines=lines;
             return lines;
@@ -78,7 +79,7 @@ ctx.closePath() ;
             }
             return perim;
         }
-    }
+    };
     //KONSTRUKTORY DZIECI
     //trojkat
     function Tri(a,b,c){
@@ -87,10 +88,7 @@ ctx.closePath() ;
             var p=this.getObwod();
             var s=p/2;
             return Math.sqrt(               //wzor Herona s(s-a)(s-b)(s-c)
-                * (s-this.lines[0].length)
-            * ( s-this.lines[1].length)
-            * (s-this.lines[2].length)
-            );
+                s*(s-this.lines[0].length) * ( s-this.lines[1].length) * (s-this.lines[2].length));
         };
     }
     //prostokat
@@ -114,7 +112,27 @@ ctx.closePath() ;
         Rect.prototype=s;
         Square.prototype=s;
 
-    })()
+    })();
+function start() {
+
+
+    var p1 = new Point(100, 100);
+    var p2 = new Point(300, 100);
+    var p3 = new Point(200, 0);
+
+    var t = new Tri(p1, p2, p3);
+    t.draw();
+
+    var r = new Rect(new Point(200, 200), 50, 100);
+    r.draw();
+
+
+    var s = new Square(new Point(130, 130), 50);
+    s.draw();
+
+    new Square(p1, 200).draw();
+
+};
 </script>
 </body>
 </html>

@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22ff30d6-f8dd-484a-8c73-e01fcf88b635" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/obiekty/kształty_inheritanceEx.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obiekty/KSZTALTY_CLOUDS.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obiekty/ksztalty_js.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obiekty/kształty_inheritanceEx.html" beforeDir="false" afterPath="$PROJECT_DIR$/obiekty/kształty_inheritanceEx.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -62,31 +64,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/obiekty/kształty_inheritanceEx.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="573">
-              <caret line="116" column="7" selection-start-line="116" selection-start-column="7" selection-end-line="116" selection-end-column="7" />
+            <state relative-caret-position="297">
+              <caret line="133" lean-forward="true" selection-start-line="133" selection-end-line="133" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/obiekty/mixsin_js.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/getterSet_iterator.js">
+        <entry file="file://$PROJECT_DIR$/obiekty/KSZTALTY_CLOUDS.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/obiekty/metody_wywolania_ob.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1633">
-              <caret line="71" column="24" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
+            <state relative-caret-position="251">
+              <caret line="15" column="28" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="15" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -131,6 +119,8 @@
         <option value="$PROJECT_DIR$/obiekty/inheritance_extend_2_js.js" />
         <option value="$PROJECT_DIR$/obiekty/mixsin_js.js" />
         <option value="$PROJECT_DIR$/obiekty/inheritance_3_js.js" />
+        <option value="$PROJECT_DIR$/obiekty/ksztalty_js.js" />
+        <option value="$PROJECT_DIR$/obiekty/KSZTALTY_CLOUDS.html" />
         <option value="$PROJECT_DIR$/obiekty/kształty_inheritanceEx.html" />
       </list>
     </option>
@@ -206,14 +196,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.inheritance_3_js.js">
+  <component name="RunManager" selected="JavaScript Debug.kształty_inheritanceEx.html">
+    <configuration name="kształty_inheritanceEx.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/_jsBasic/obiekty/kształty_inheritanceEx.html">
+      <method v="2" />
+    </configuration>
     <configuration name="Inheritance_js.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/obiekty/Inheritance_js.js" working-dir="$PROJECT_DIR$">
-      <method v="2" />
-    </configuration>
-    <configuration name="Prototypy_js.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/obiekty/Prototypy_js.js" working-dir="$PROJECT_DIR$">
-      <method v="2" />
-    </configuration>
-    <configuration name="in_built_obiekt_Object_Array.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/obiekty/in_built_obiekt_Object_Array.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="inheritance_3_js.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/obiekty/inheritance_3_js.js" working-dir="$PROJECT_DIR$">
@@ -222,20 +209,23 @@
     <configuration name="inheritance_extend_2_js.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/obiekty/inheritance_extend_2_js.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
+    <configuration name="ksztalty_js.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/obiekty/ksztalty_js.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Node.js.Prototypy_js.js" />
-      <item itemvalue="Node.js.in_built_obiekt_Object_Array.js" />
       <item itemvalue="Node.js.Inheritance_js.js" />
       <item itemvalue="Node.js.inheritance_extend_2_js.js" />
       <item itemvalue="Node.js.inheritance_3_js.js" />
+      <item itemvalue="JavaScript Debug.kształty_inheritanceEx.html" />
+      <item itemvalue="Node.js.ksztalty_js.js" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.kształty_inheritanceEx.html" />
+        <item itemvalue="Node.js.ksztalty_js.js" />
         <item itemvalue="Node.js.inheritance_3_js.js" />
         <item itemvalue="Node.js.inheritance_extend_2_js.js" />
         <item itemvalue="Node.js.Inheritance_js.js" />
-        <item itemvalue="Node.js.Prototypy_js.js" />
-        <item itemvalue="Node.js.in_built_obiekt_Object_Array.js" />
       </list>
     </recent_temporary>
   </component>
@@ -255,7 +245,8 @@
       <workItem from="1562489171644" duration="16173000" />
       <workItem from="1562575821787" duration="13527000" />
       <workItem from="1562790229818" duration="32197000" />
-      <workItem from="1563201472627" duration="867000" />
+      <workItem from="1563201472627" duration="1492000" />
+      <workItem from="1563216069882" duration="4566000" />
     </task>
     <task id="LOCAL-00001" summary="function">
       <created>1562266329569</created>
@@ -341,22 +332,29 @@
       <option name="project" value="LOCAL" />
       <updated>1563118650009</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="inherit shapes html js">
+      <created>1563202369759</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1563202369759</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116030000" />
+    <option name="totallyTimeSpent" value="121221000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13879709" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13879709" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.40588236" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.40588236" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -386,7 +384,8 @@
     <MESSAGE value="inherit2" />
     <MESSAGE value="inherit3 extend" />
     <MESSAGE value="inherit3 extend apply" />
-    <option name="LAST_COMMIT_MESSAGE" value="inherit3 extend apply" />
+    <MESSAGE value="inherit shapes html js" />
+    <option name="LAST_COMMIT_MESSAGE" value="inherit shapes html js" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DataObj.js">
@@ -526,27 +525,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/obiekty/mixsin_js.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getterSet_iterator.js">
+    <entry file="file://$PROJECT_DIR$/obiekty/ksztalty_js.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+        <state relative-caret-position="138">
+          <caret line="30" column="29" lean-forward="true" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/obiekty/metody_wywolania_ob.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1633">
+        <state relative-caret-position="642">
           <caret line="71" column="24" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getterSet_iterator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/obiekty/mixsin_js.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/obiekty/KSZTALTY_CLOUDS.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="15" column="28" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="15" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/obiekty/kształty_inheritanceEx.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="116" column="7" selection-start-line="116" selection-start-column="7" selection-end-line="116" selection-end-column="7" />
+        <state relative-caret-position="297">
+          <caret line="133" lean-forward="true" selection-start-line="133" selection-end-line="133" />
         </state>
       </provider>
     </entry>
