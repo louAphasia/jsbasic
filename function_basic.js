@@ -35,13 +35,13 @@ console.log(typeof n);
 console.log(typeof newf);
 
 //funkcja z parametrem funkcja
-function razydwa(a,b,c,d,callback){
+function razydwa(a,b,callback){
     var i,arr=[];
-    for(i=0;i<4;i++){
+    for(i=0;i<3;i++){
         arr[i]=callback(arguments[i]*2);}
     return arr;
     }
-var arrr=razydwa(1,2,3,4,function (a){return a+1;} );
+var arrr=razydwa(1,2,function (a){return a+1;} );
 console.log(arrr);
 
 // funckcja anonimowa samowywolujaca sie
