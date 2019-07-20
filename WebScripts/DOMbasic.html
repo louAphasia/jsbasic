@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dom basic</title>
+</head>
+<body>
+<p id="opener"> first</p>
+<p><em>second</em> para </p>
+<p id="close"> fin</p>
+<p class="input"> wpisz </p>
+<script type="text/javascript">
+
+var my=document.getElementById('close');
+my.innerHTML='<em> my </em> fi';
+var my2=document.getElementById('opener');
+my2.firstChild.nodeValue='zmiana';
+
+my.style.border='10px solid red';
+my.style.fontWeight='bold';
+my.align='right';
+
+var inp=document.getElementsByClassName('input');
+//inp.value=inp.value.replace(/wpisz/, 'nic');
+var  myp=document.createElement('p');
+myp.innerHTML='jeszczeee';
+myp.style.border='2px dotted blue';
+document.body.appendChild(myp);
+function switchp(){
+    var st=document.getElementsByClassName('input')[0].style;
+    st.visibility=(st.visibility==='hidden')? 'visible':'hidden';
+}
+var mint=setInterval(switchp,1000);
+   /* function walkDOM(n){
+        do{
+            document.getElementById("demo").innerHTML =n;
+            if(n.hasChildNodes()){
+                walkDOM(n.firstChild)
+            }
+        }while(n=n.nextSibling)
+    }
+    walkDOM(document.body)*/
+</script>
+<!-- end -->
+</body>
+</html>
