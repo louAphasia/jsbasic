@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>eventy</title>
+</head>
+<body>
+<p id="close"> eventy testy</p>
+<u>
+    <li><a href="http://wyborcza.pl/0,75400.html#TRNavSST">link</a></li>
+</u>
+<script type="text/javascript">
+
+    function parahand(e){
+        alert('klikniety akapit');
+        e.stopPropagation(); // juz po kliknieciu na ten napis tylko ta funkcja sie uruchomi
+    }
+    var para=document.getElementById('close');
+    para.addEventListener('click',parahand,false);
+    //funcja anonimowa body i window i dokument
+    document.body.addEventListener('click', function () {alert('klikniete body')},false);
+
+    document.addEventListener('click',function () { alert('klikniety dokument');}, false);
+    window.addEventListener('click',function () { alert('klikniete okno')},false);
+
+    //zablokowanie default dzialania np. linku
+    var alllink=document.getElementsByTagName('a');
+    for(var i=0; i<alllink.length;i++){
+        alllink[i].addEventListener('click', function(e){
+            if (!confirm('czy chcesz next web?')){ e.preventDefault()}
+        },false);
+    };
+
+</script>
+</body>
+</html>

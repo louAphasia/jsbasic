@@ -8,13 +8,31 @@
 <p id="opener"> first</p>
 <p><em>second</em> para </p>
 <p id="close"> fin</p>
-<p class="input"> wpisz </p>
+<div onclick="alert('aaa')">CLICK SIMPLE</div>
+<div id="my">CLICK LONG</div>
 <script type="text/javascript">
+    var e=document.getElementById('my');
+    my.onclick=function () {
+        alert('auuu longer');
+    }
+</script>
+<input name="search" type="text" size="50" maxlength="255" value="podaj maila"/>
 
+<p class="input"> wpisz </p>
+
+<script type="text/javascript">
+    // NA KONCY BODY wstawia appendchild
+    document.body.appendChild(document.createTextNode('konieccc'));
+    document.body.insertBefore(document.createTextNode('insert'),document.body.firstChild);
 var my=document.getElementById('close');
+document.body.appendChild(my.cloneNode(true));//cale drzewo pod opener sklonowanie
+
 my.innerHTML='<em> my </em> fi';
+document.body.appendChild(my.cloneNode(true));//cale drzewo pod opener sklonowanie
+
 var my2=document.getElementById('opener');
 my2.firstChild.nodeValue='zmiana';
+
 
 my.style.border='10px solid red';
 my.style.fontWeight='bold';
@@ -30,6 +48,13 @@ function switchp(){
     var st=document.getElementsByClassName('input')[0].style;
     st.visibility=(st.visibility==='hidden')? 'visible':'hidden';
 }
+var myf=document.createElement('p');
+var myt=document.createTextNode('jeszczeeee');
+myf.appendChild(myt);
+var str=document.createElement('strong');
+str.appendChild(document.createTextNode('jeden'));
+myf.appendChild(str);
+document.body.appendChild(myf);
 var mint=setInterval(switchp,1000);
    /* function walkDOM(n){
         do{
@@ -40,6 +65,9 @@ var mint=setInterval(switchp,1000);
         }while(n=n.nextSibling)
     }
     walkDOM(document.body)*/
+   var epa=document.getElementById('close');
+   epa.addEventListener('click',function(){ alert('clockccc')}, false);
+   document.forms[0].elements[0].value='@mail.com'// zmiana value <input name="search" type="text" size="50" maxlength="255" value="podaj maila"/>
 </script>
 <!-- end -->
 </body>
