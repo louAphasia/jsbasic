@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IMG REPLACE</title>
+</head>
+<body>
+<p><img src="gram.jpg" alt="Kot"> i jego kolega
+<img src="cat.jpg" alt="drugi kot"> .</p>
+<p><button onclick="replace()"> zmien</button></p>
+<!-- do drugiej funkcji elt dodanie info -->
+<blockquote id="quote">
+    nadzieja prawda lol // funkcja elt() dodaj info o autorze cytatu
+</blockquote>
+<!-- ustawienie dowolne atrybuty -->
+<p data-classic="sec"> Kod rozruchu </p>
+<p data-classic="secret"> mamammm </p>
+<!-- do funkcj highlight i highlightAll -->
+<p> Oto funkcja </p>
+<pre data-langugage="javascript"> function id(x) { return x; } </pre>
+<script>
+    function replace(){
+        var imgs=document.body.getElementsByTagName("img");
+        for(var i=imgs.length-1;i>=0;i++){
+            var imga=imgs[i];
+            if(imga.alt){    // kazde klikniecie zamienia na text node
+                var te=document.createTextNode(imga.alt);
+                imga.parentNode.replaceChild(te,imga);
+            }
+        }
+    }
+
+
+    function elt(type){
+        var node=document.createElement(type);
+        for(var i=1;i<arguments.length;i++){
+            var child=arguments[i];
+            if(typeof  child=="string")
+                child=document.createTextNode(child)
+            node.appendChild(child)
+        }
+        return node;
+    }
+    document.getElementById("quote").appendChild(
+        elt("footer", "-",
+        elt("strong", "karl"),
+        ", przedmowa do wyd II",
+        elt("em", "society law"),",1950")
+    );
+    // node ustawianie dowolnego atrybutu w tym przypadku data-classic secret remove child
+    var paras=document.body.getElementsByTagName("p");
+    Array.prototype.forEach.call(paras,function (para) {
+        if(para.getAttribute("data-classic")=="secret")
+            para.parentNode.removeChild(para);
+
+    });
+    //wyroznianie skladni funkcja znajdujae znaczniki z data-language  wyroznic slowa kluczowe jezyks
+    function highlight(node,keywords) {
+        var text=node.textContent;
+        node.textContent=""; //usuwanie dotychczasowej zawartosci node wezla
+
+        var match,pos=0;
+        while(match=keywords.exec(text)){
+            var before=text.slice(pos,match.index);
+            node.appendChild(document.createTextNode(before));
+            var strong=document.createElement("strong");
+            strong.appendChild(document.createTextNode(match[0]));
+            node.appendChild(strong);
+            pos=keywords.lastIndex;
+        }
+        var after=text.slice(pos);
+        node.appendChild(document.createTextNode(after));
+    }
+    var languages={
+        javascript:/\b(function|return|var)\b/g/* -etc*/
+    };
+    function highlightAll() {
+        var pres=document.body.getElementsByTagName("pre");
+        for(var i=0;i<pres.length;i++){
+            var pre=pres[i]
+            var lang=pre.getAttribute("data-langugage");
+            if(languages.hasOwnProperty(lang))
+                highlight(pre,languages[lang])
+        }
+    }
+    highlightAll();
+
+</script>
+</body>
+</html>

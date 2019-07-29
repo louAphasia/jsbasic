@@ -30,7 +30,21 @@
             if (!confirm('czy chcesz next web?')){ e.preventDefault()}
         },false);
     };
-
+//eventy na 100% w kazdym browserze
+    function callback(evt){
+        evt=evt||window.event;
+        var target=(typeof evt.target !=='undefined')? evt.target:evt.srcElement;
+       alert(target.nodeName)
+    }
+    if(document.addEventListener){
+        document.addEventListener('click',callback,false);
+    } else if (document.attachEvent){
+        document.attachEvent('onclick',callback);
+    }else{
+        document.onclick=callback;
+    }
+    //firefox
+    document.addEventListener('click',function (e) {console.log(e.target.nodeName);}, false)
 </script>
 </body>
 </html>
