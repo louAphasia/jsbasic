@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TABLE EXERCISE</title>
+</head>
+<body>
+<table>
+    <!-- tu generujemy z kodu tabele -->
+</table>
+<!-- druga opcja on click generuje  tabele -->
+<input type="button" value="generuj tabele" onclick="generateTab()">
+<p></p>
+<table>
+    <caption> caption line</caption>
+    <col style="background-color: darkorchid"/>
+    <tr>
+        <td>cell1</td>
+        <td>cell1</td>
+        <td>cell1</td>
+        <td>cell1</td>
+    </tr>
+    <tr >
+        <td colspan="2">cell1</td>
+        <td>cell1</td>
+        <td>cel1</td>
+        <td>cell1</td>
+    </tr>
+    <tr>
+        <td>cell1</td>
+        <td>cell1</td>
+        <td>cel1</td>
+        <td>cell1</td>
+    </tr>
+
+</table>
+<p>'
+
+</p>
+<table border="1px">
+    <caption style="font: 1.7rem rapscallion;letter-spacing: 3px;text-shadow: 1px 1px 0 #fff, 0 0 9px #000">
+        Superheros and sidekicks</caption>
+    <colgroup>
+        <col>
+        <col span="2" class="batman">
+        <col span="2" class="flash">
+    </colgroup>
+    <tr>
+        <td> </td>
+        <th>Batman</th>
+        <th>Robin</th>
+        <th>The Flash</th>
+        <th>Kid Flash</th>
+    </tr>
+    <tr>
+        <th>Skill</th>
+        <td>Smarts</td>
+        <td>Dex, acrobat</td>
+        <td>Super speed</td>
+        <td>Super speed</td>
+    </tr>
+</table>
+<script>
+    //dane
+    let mountains=[
+        {name:"monte",height:1685, place:"Foreste"},
+        {name:"falterona", height:1520,place:"wroc"},
+        {name:"fuiji",height:1345,place:"japan"},
+        {name:"loveegnes", height:1234, place:"dark"}
+    ];
+    function  genTabHead(table){
+        let thead=table.createTHead()
+        let row=thead.insertRow();
+        for(let key of data){
+            let th=document.createElement("th");
+            let text=document.createTextNode(key);
+            th.appendChild(text);
+            row.appendChild(th);
+        }
+    }
+
+    function genTable(table,data){
+        for(let e of data){
+            let row=table.insertRow();
+            for(key in e){
+                let cell=row.insertCell();
+                let text=document.createTextNode(e[key]);
+                cell.appendChild(text);
+            }
+        }
+    }
+    let table=document.querySelector("table");
+    let data=Object.keys(mountains[0]);
+    genTabHead(table,data);
+    genTable(table,mountains);
+    ///////////////////////// generate table inna
+    function generateTab(){
+        var body=document.getElementsByTagName("body")[0];
+        var tb1=document.createElement("table");
+        var tb1body=document.createElement("tbody");
+
+        //tworzy all komorki
+        for(var i=0;i<2;i++){
+            var row=document.createElement("tr");
+            for(var j=0;j<2;j++){
+                var cell=document.createElement("td");
+                var celltext=document.createTextNode("cell in row "+i+", column "+j);
+                cell.appendChild(celltext);
+                row.appendChild(cell);
+            }
+            //dodanie na koncu table body
+            tb1body.appendChild(row)
+        }
+        //put tbody into table
+        tb1.appendChild(tb1body);
+        body.appendChild(tb1);
+
+        tb1.setAttribute("border","5");
+    }
+    console.log(document.body.childNodes.length)
+</script>
+</body>
+</html>

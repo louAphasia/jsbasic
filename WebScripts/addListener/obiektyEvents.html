@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>obiekty zdarzen</title>
+</head>
+<body>
+<button> PUSH </button>
+<script>
+    var buu=document.getElementsByTagName("button")[0]; //musi byc ktory element bo zwraca tablice a query selector pierwszy napotkayn //do addevent tylko
+    buu.addEventListener("mousedown", function(event){
+        if(event.which==1){
+            console.log("lewy")
+        }
+        else if(event.which==2){
+            console.log("midddd")
+        }
+        else if(event.which==3){
+            console.log('prawy')
+        }
+    });
+</script>
+</body>
+</html>

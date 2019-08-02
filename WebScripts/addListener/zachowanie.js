@@ -1,7 +1,7 @@
-var myevent=document.body;
+/*var myevent=document.body;
 myevent.addEventListener('my', 'submit', function (e) {
   myevent.stopPropagation(e);
-  var 
+
   //walidacja
     var el=document.getElementById('szukaj');
     if(!el.value){
@@ -9,3 +9,5 @@ myevent.addEventListener('my', 'submit', function (e) {
         alert("prosze wprowadzic zapytanie");
     }
 });
+*/
+console.log("v".charCodeAt(0))

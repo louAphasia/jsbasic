@@ -17,7 +17,8 @@
 <p data-classic="secret"> mamammm </p>
 <!-- do funkcj highlight i highlightAll -->
 <p> Oto funkcja </p>
-<pre data-langugage="javascript"> function id(x) { return x; } </pre>
+<pre data-language="javascript"> function id(x) { return x; } </pre>
+<!--p><button onclick="highlightAll()"> podswietl</button></p-->
 <script>
     function replace(){
         var imgs=document.body.getElementsByTagName("img");
@@ -77,13 +78,13 @@
     function highlightAll() {
         var pres=document.body.getElementsByTagName("pre");
         for(var i=0;i<pres.length;i++){
-            var pre=pres[i]
-            var lang=pre.getAttribute("data-langugage");
+            var pre=pres[i];
+            var lang=pre.getAttribute("data-language");
             if(languages.hasOwnProperty(lang))
                 highlight(pre,languages[lang])
         }
     }
-    highlightAll();
+highlightAll();
 
 </script>
 </body>

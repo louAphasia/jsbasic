@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>propagation</title>
+</head>
+<body>
+<p>akapit z <button> PUSH</button></p>
+<button>A</button>
+<button>B</button>
+<button>C</button>
+<script>
+    var para=document.querySelector("p");
+    var bu=document.querySelector("button")
+    para.addEventListener("mousedown", function () { console.log("Pro-akapitu");});
+    bu.addEventListener("mousedown",function (event) { console.log("pro-push")
+        if (event.which==3)
+            event.stopPropagation();
+    });
+    document.body.addEventListener("click", function (event) {
+        if(event.target.nodeName=="BUTTON")
+            console.log("click ", event.target.textContent);
+    });
+</script>
+
+</body>
+</html>

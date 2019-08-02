@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>count area</title>
+</head>
+<body>
+<p><span id="one"></span></p>
+<p><span id="two"></span></p>
+
+<p style="border:300px solid red">
+    Tutaj moje poole
+</p>
+
+<script>
+
+    var para=document.body.getElementsByTagName("p")[0];
+console.log("clientHeight", para.clientHeight, "clientWidth",para.clientWidth);
+console.log("clienttop", para.clientTop, "clientleft", para.clientLeft);
+
+console.log("offsetheight ", para.offsetHeight, "offsetw ", para.offsetWidth);
+console.log("offsetLEFT ", para.offsetLeft, "offsettop ", para.offsetTop);
+    console.log("obiekt zwraca wzg górnego lewego rogu", para.getBoundingClientRect());
+    var x=window.pageXOffset; // window.scrollX
+    var y=window.pageYOffset; //window.scrollY to samo / jesli obramowanie pole wymaga przewijania pokazuje ile poziomo pionowo
+    console.log(x,y);
+
+
+    //obliczanie ile czasu potrzebuje funkcja
+    function time(name,action){
+        var start=Date.now(); //aktualny czas w milisek
+        action();
+        console.log("funkcja ", name, " potrzebowala ", Date.now()-start, " ms");
+    }
+    time("naive",function(){  // przykladwa funkcja malowaniaXXX dlugosc 2000
+        var target=document.getElementById("one");
+        while(target.offsetWidth<2000)  //nie moze byc clientWidth ani inne
+            target.appendChild(document.createTextNode("X"));
+    });
+    time("clever", function(){
+        var t=document.getElementById("two");
+        t.appendChild(document.createTextNode("XXXXX")); //po co to?
+        var total=Math.ceil(2000/(t.offsetWidth/5));
+        console.log(total); //173
+        for(var i=5;i<total;i++)
+            t.appendChild(document.createTextNode("x"))
+    });
+</script>
+</body>
+</html>

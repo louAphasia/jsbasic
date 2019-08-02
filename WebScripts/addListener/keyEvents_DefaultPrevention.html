@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>key default</title>
+</head>
+<body>
+<a href="https://developer.mozilla.org">MDN</a>
+<p> strona bedzie filoetowa gdy wcisniesz klawisz F</p>
+<p> nacisniej  ctrl spacja aby kontynuowac</p>
+<p> kliknij na tej stronie i napisz cos </p>
+<script>
+    addEventListener("keypress", function(event){
+       console.log(String.fromCharCode(event.charCode))
+    });
+
+    addEventListener("keydown",function (event) {
+        if(event.keyCode==32&&event.ctrlKey)
+            console.log("kontnuujemy")
+    });
+    addEventListener("keydown",function (event) {
+        if(event.keyCode==70){
+            document.body.style.background="violet";
+        }
+    });
+    addEventListener("keyup",function (event) {
+        if(event.keyCode==70)
+    document.body.style.background="";
+    })
+
+    //check nr charcode klawiszy
+    console.log("violet".charCodeAt(0))
+
+    var link=document.querySelector("a");
+    link.addEventListener("click", function (event) {
+        console.log("nic");
+        event.preventDefault(); //nie uruchamia sie link domyslna funkcja a href
+    });
+</script>
+</body>
+</html>
