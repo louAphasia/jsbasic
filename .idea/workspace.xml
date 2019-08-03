@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22ff30d6-f8dd-484a-8c73-e01fcf88b635" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/WebScripts/addListener/keyEvents_DefaultPrevention.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebScripts/addListener/obiektyEvents.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebScripts/addListener/stopPropag_eventTarget.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebScripts/countArea.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebScripts/css_js_animatefotoeclipse.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebScripts/tablegenerate.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obiekty/ForOfIn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obiekty/generators.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebScripts/addListener/MousePointer_events.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebScripts/addLiist/web.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebScripts/addListener/web.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebScripts/addLiist/zachowanie.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebScripts/addListener/zachowanie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebScripts/replace_AddInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebScripts/replace_AddInfo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/first.js" beforeDir="false" afterPath="$PROJECT_DIR$/first.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebScripts/addListener/keyEvents_DefaultPrevention.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebScripts/addListener/keyEvents_DefaultPrevention.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -59,11 +49,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebScripts/addListener/keyEvents_DefaultPrevention.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="7" column="47" lean-forward="true" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+            <state relative-caret-position="230">
+              <caret line="22" column="52" lean-forward="true" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WebScripts/addListener/MousePointer_events.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="76" column="7" lean-forward="true" selection-start-line="76" selection-start-column="7" selection-end-line="76" selection-end-column="7" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,15 +107,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebScripts/XMLHttpReq_Ex/DOM_fun.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebScripts/addListener/zachowanie.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="253">
@@ -141,7 +134,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/strObjnum.js" />
         <option value="$PROJECT_DIR$/JSONbasic.js" />
         <option value="$PROJECT_DIR$/DataObj.js" />
         <option value="$PROJECT_DIR$/ArrayBasic.js" />
@@ -192,6 +184,7 @@
         <option value="$PROJECT_DIR$/WebScripts/addListener/stopPropag_eventTarget.html" />
         <option value="$PROJECT_DIR$/WebScripts/addListener/zachowanie.js" />
         <option value="$PROJECT_DIR$/WebScripts/addListener/keyEvents_DefaultPrevention.html" />
+        <option value="$PROJECT_DIR$/WebScripts/addListener/MousePointer_events.html" />
       </list>
     </option>
   </component>
@@ -333,7 +326,7 @@
       <workItem from="1563447315458" duration="15868000" />
       <workItem from="1564045876955" duration="8078000" />
       <workItem from="1564390086966" duration="15606000" />
-      <workItem from="1564645946792" duration="12380000" />
+      <workItem from="1564645946792" duration="15165000" />
     </task>
     <task id="LOCAL-00001" summary="function">
       <created>1562266329569</created>
@@ -468,11 +461,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564428477037</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="book 2 event">
+      <created>1564783779784</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1564783779784</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178975000" />
+    <option name="totallyTimeSpent" value="181760000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -569,7 +569,8 @@
     <MESSAGE value="dom1" />
     <MESSAGE value="eventydom" />
     <MESSAGE value="DOM HM book 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="DOM HM book 1" />
+    <MESSAGE value="book 2 event" />
+    <option name="LAST_COMMIT_MESSAGE" value="book 2 event" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DataObj.js">
@@ -899,8 +900,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WebScripts/addListener/keyEvents_DefaultPrevention.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="7" column="47" lean-forward="true" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+        <state relative-caret-position="230">
+          <caret line="22" column="52" lean-forward="true" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebScripts/addListener/MousePointer_events.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="76" column="7" lean-forward="true" selection-start-line="76" selection-start-column="7" selection-end-line="76" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
