@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>zderzenie aktywacji</title>
+</head>
+<body>
+<p> nazwisko <input type="text" data-help="wpisz imie i nazwisko"></p>
+<p> Wiek: <input type="text" data-help="wpisz ile masz lat"></p>
+<p id="help"></p>
+
+<script>
+    var help=document.querySelector("#help");
+    var fields=document.querySelectorAll("input");
+    for(var i=0;i<fields.length;i++){
+        fields[i].addEventListener("focus",function(event){
+            var text=event.target.getAttribute("data-help");
+            help.textContent=text;
+        });
+        fields[i].addEventListener('blur',function(eveny){
+            help.textContent="";
+        });
+    }
+</script>
+</body>
+</html>
