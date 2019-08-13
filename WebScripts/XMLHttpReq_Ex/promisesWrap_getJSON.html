@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>json pliki z serwera </title>
+</head>
+<body>
+<script>
+
+    function get(url){
+        return new Promise(function(succeed, fail){
+            var req=new XMLHttpRequest();
+            req.open("GET",url,true); //asynchroniczny
+            req.addEventListener("load", function(){
+                if (req.status<400)
+                    succeed(req.responseText);
+                else
+                    fail(new Error("request failed " + req.statusText));
+            });
+            req.addEventListener("error", function(){
+                fail(new Error("error net"));
+            });
+            req.send(null);
+        });
+    }
+    function showMess(msg){
+        var elt=document.createElement("div");
+        elt.textContent=msg;
+        return document.body.appendChild(elt);
+    }
+
+    function getJSON(url){
+        return get(url).then(JSON.parse);
+    }
+    var loading=showMess("wczytywanie...");
+    getJSON("ert.json").then(function (bert) {
+        return showMess("age Bert'schildren " + bert.age)
+    /*}).then(function (spouse){
+        return getJSON(spouse.mother);
+    }).then(function (mother) {
+        showMess("nazwisko to " + mother.name);*/
+    }).catch(function (error) {
+        showMess(String(error));
+    }).then(function(){
+        document.body.removeChild(loading);
+    });
+
+</script>
+</body>
+</html>

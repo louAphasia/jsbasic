@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>licznik wpisanych znakow </title>
+</head>
+<body>
+<input type="text"> LENGTH: <span id="len">0</span>
+<script>
+    var text=document.querySelector("input")
+    var output=document.getElementById("len")
+    text.addEventListener("input", function(){
+        output.textContent=text.value.length;
+    });
+</script>
+</body>
+</html>

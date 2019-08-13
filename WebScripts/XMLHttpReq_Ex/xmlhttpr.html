@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var req=new XMLHttpRequest();
+    req.open("GET","content.txt",false);
+    req.send(null);
+    console.log(req.responseText);
+    console.log(req.status, req.statusText, req.getResponseHeader("Content-type"), req.getResponseHeader("content-length"))
+</script>
+</body>
+</html>

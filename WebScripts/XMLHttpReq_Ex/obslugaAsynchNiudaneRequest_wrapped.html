@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function getURL(url,callback) {
+            var req=new XMLHttpRequest();
+            req.open("GET", url, true) //asynchroniczne w tle
+            req.addEventListener("load",function () {
+                if(req.status<400)
+                    callback(req.responseText);
+                else
+                    callback(null,new Error("Bład request"+ req.statusText));
+            });
+            req.addEventListener("error", function () {
+                callback(url, new Error("Błąd sieci "))
+            });
+            req.send(null);
+        }
+
+        getURL("content.txt",function (content,error) {
+            if(error!=null)
+                console.log("nie udalo sie pobrac pliku" +error);
+            else
+                console.log("data text"+content); //przedstawia zawartosc
+        });
+    </script>
+</head>
+<body>
+
+</body>
+</html>

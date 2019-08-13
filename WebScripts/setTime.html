@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>time</title>
+</head>
+<body>
+<script>
+    document.body.style.background="violet";
+    setTimeout(function () {
+        document.body.style.background="blue";
+    },2000);
+    var bomb=setTimeout(function () {
+console.log("bummmm")
+    },5000);
+    if(Math.random()<0.5) {
+    console.log("rozbrojona");
+    clearTimeout(bomb)}  //mniej niz 50% szans
+    //powtarzajace co iles sekund
+    var ticks=0;
+    var clock=setInterval(function () {
+console.log("tick ", ticks++);
+if(ticks==10){
+    clearInterval(clock);
+    console.log("stop");
+}
+    },200)
+</script>
+</body>
+</html>

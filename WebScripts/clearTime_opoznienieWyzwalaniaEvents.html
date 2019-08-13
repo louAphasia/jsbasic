@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>eliminowanie zbyt czestego wyzwalania zdarzen</title>
+</head>
+<body>
+<textarea>Wpisz tu cos</textarea>
+
+<script>
+    var textarea=document.querySelector("textarea");
+    var timeout;
+    textarea.addEventListener("keydown",function () {
+        clearTimeout(timeout);
+        timeout=setTimeout(function () {
+            console.log("wstrzymano na chwile pisanie")
+        },2000);
+    });
+</script>
+</body>
+</html>

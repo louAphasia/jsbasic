@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>wspolrzedne kursora</title>
+</head>
+<body>
+<script>
+    let sch=null;
+    window.addEventListener("mousemove",event=>{
+        if(!sch){
+            setTimeout(()=>{
+                document.body.textContent=`Mouse at ${sch.pageX}, ${sch.pageY}`;  //znak kolo falki pod esc NIE pojedyncze ""
+                sch=null
+            },250)
+        }
+        sch=event;
+    });
+</script>
+</body>
+</html>

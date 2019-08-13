@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>validate FORM</title>
+    <style>
+        .signup{
+            border: 1px solid lemonchiffon;
+            font: normal 14px helvetica;
+            color: blueviolet;
+        }
+    </style>
+    <script>
+        function validate (form){
+            fail=validateForename(form.forename.value)
+            fail += validateSurname(form.surname.value)
+            fail += validateUsername(form.username.value)
+            fail += validatePassword(form.password.value)
+            fail += validateAge(form.age.value)
+            fail += validateEmail(form.email.value)
+
+            if  (fail=="") return true
+            else { alert(fail); return false}
+        }
+        function validateForename(field) {
+           return (field=="")? "Nie wpisano imienia.\n" : ""
+        }
+        function validateSurname(field){
+            return (field=="")? "Nie wpisano nazwiska.\n": ""
+        }
+        function validateUsername(field){
+            if(field=="") return "nie wpisano nazwy uzytkownika.\n"
+            else if(field.length<5){
+                return "Nazwa uzytkownika musi sie skladac z conajmniej 5 znakow. \n"
+            } else if(/[^a-zA-Z0-9_-]/.test(field))
+                return "tylko znaki od A-Z a -z i 0 -9 dopuszczalne. \n"
+            return ""
+        }
+        function validatePassword(field){
+            if(field=="") return "nie wpisano hasla \n"
+            else if(field.length<6){
+                return "Haslo musi miec co najmniej 6 znakow\n"
+            } else if (! /[a-z]/.test(field) ||
+                       ! /[A-Z]/.test(field) ||
+                       ! /[0-9]/.test(field))
+                return "w hasle musi sie znalesc co najmniej jeden znak z zakresow  a-z , A-Z i 0-9 \n."
+            return ""
+        }
+        function validateAge(field){
+            if(isNaN(field)) return "nie podano wieku \n."
+            else if(field <18 || field >100)
+                return "wiek musi sie zawierac miedzy 18 a 100 \n"
+            return ""
+        }
+
+        function validateEmail(field){
+            if(field=="") return " Nie wpisano adresu email \n"
+            else if(!((field.indexOf(".")>0)&&
+                (field.indexOf("@")>0))||
+            /[^a-zA-Z0-9.@_-]/.test(field))
+                return "Podany adres e-mail jest nieprawidlowy .\n"
+            return ""
+        }
+    </script>
+</head>
+<body>
+<table border="0" cellpadding="2" cellspacing="5" bgcolor="#e6e6fa" class="signup">
+    <th colspan="2" align="center"> formularz rejestracji</th>
+    <form method="post" onsubmit="return validate(this)"> <!-- action="adduser.php lub inny plik tego typu bdanych -->
+        <tr><td>NAME</td>
+        <td><input type="text" maxlength="32" name="forename"></td></tr>
+        <tr><td> SURNAME</td>
+        <td><input type="text" maxlength="32" name="surname"> </td></tr>
+        <tr><td>USERNAME</td>
+        <td><input type="text" maxlength="15" name="username"></td></tr>
+        <tr><td>PASSWORD</td>
+            <td><input type="text" maxlength="12" name="password"></td></tr>
+        <tr><td>AGE</td>
+            <td><input type="text" maxlength="3" name="age"></td></tr>
+        <tr><td>EMAIL</td>
+            <td><input type="text" maxlength="64" name="email"></td></tr>
+        <tr><td colspan="2" align="center"><input type="submit" value="Registration"></td></tr>
+    </form>
+</table>
+
+</body>
+</html>

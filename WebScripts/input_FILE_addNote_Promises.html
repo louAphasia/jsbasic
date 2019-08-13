@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>file browse</title>
+</head>
+<body>
+<input type="file">
+<p><input id="multi" type="file" multiple ></p>
+
+<p> Notatki : <select id="list"></select> </p>
+<button onclick="addNote()"> nowa </button> <br>
+<p><textarea id="current" style="width: 100%; height: 10em"></textarea></p>
+<script>
+
+    var inp=document.querySelector("input");
+    inp.addEventListener("change",function(){
+        if(inp.files.length>0){
+            var file=inp.files[0];
+            console.log("wybrany plik ", file.name);
+            if(file.type)
+                console.log("Plik typu", file.type)
+        }
+    });
+    // input multiple script
+    var inpu=document.getElementById("multi");
+    inpu.addEventListener("change", function(){
+        Array.prototype.forEach.call(inpu.files,function (file) {
+var reader=new FileReader();
+reader.addEventListener("load", function(){
+    console.log("plik", file.name, "zaczyna sie od ", reader.result.slice(0,20));
+});
+reader.readAsText(file);
+        })
+    })
+    function readfile(file) {
+        return new Promise(function(succeed,fail){
+            var reader=new FileReader();
+            reader.addEventListener("load",function(){
+                succeed(reader.result);
+            });
+            reader.addEventListener("error", function(){
+                fail(reader.error)
+            });
+            reader.readAsText(file);
+        })
+
+    }
+    // zapisywanie  stringi w sposob lokalny
+    localStorage.setItem("username","marii");
+    console.log(localStorage.getItem("username"));
+    localStorage.removeItem("username");
+
+    // scipt do notatki select id list
+    var list=document.querySelector("#list");
+    function addToList(name) {
+var opt=document.createElement("option");
+opt.textContent=name;
+list.appendChild(opt);
+    }
+    var notes=JSON.parse(localStorage.getItem("notes")) || //inicjuj listy z local storage
+        {" lista zakupow" :""};
+    for(var name in notes)
+        if(notes.hasOwnProperty(name))
+            addToList(name);
+
+    function saveToLocal() {
+        localStorage.setItem("notes", JSON.stringify(notes));
+    }
+
+    var current=document.querySelector("#current");
+    current.value=notes[list.value];
+
+    list.addEventListener("change", function(){
+        current.value=notes[list.value];
+    });
+    current.addEventListener("change",function () {
+        notes[list.value]=current.value;
+        saveToLocal();
+    })
+
+    function addNote(){
+        var name=prompt("nazwa notatki ", "");
+        if(!name) return;
+        if(!notes.hasOwnProperty(name)){
+            notes[name]="";
+            addToList(name);
+            saveToLocal();
+        }
+        list.value=name;
+        current.value=notes[name];
+    }
+
+</script>
+</body>
+</html>

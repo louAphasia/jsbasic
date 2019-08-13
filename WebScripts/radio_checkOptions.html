@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Options types</title>
+</head>
+<body>
+<input type="checkbox" id="purple">
+<label for="purple"> zmien kolor na fiolet tej strony</label>
+<!---- -->
+<input type="radio" name="color" value="mediumpurple">Fiolet
+<input type="radio" name="color" value="lightgreen"> zielony
+<input type="radio" name="color" value="lightblue"> niebieski
+<!-- -->
+<select multiple>
+    <option value="1"> one</option>
+    <option value="2"> two</option>
+    <option value="3"> 65</option>
+    <option value="4"> 98</option>
+
+</select>
+<script>
+    var check=document.querySelector("#purple");
+    check.addEventListener("change", function () {
+        document.body.style.background=check.checked?"mediumpurple": "";
+    });
+    // do radio skrypt
+    var buttons=document.getElementsByName("color");
+    function setColor(event) {
+        document.body.style.background=event.target.value;
+    }
+    for(var i=0; i<buttons.length;i++)
+        buttons[i].addEventListener("change",setColor);
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>promises request</title>
+</head>
+<body>
+<script>
+    function get(url){
+        return new Promise(function(succeed, fail){
+            var req=new XMLHttpRequest();
+            req.open("GET",url,true); //asynchroniczny
+            req.addEventListener("load", function(){
+                if (req.status<400)
+                    succeed(req.responseText);
+                else
+                    fail(new Error("request failed " + req.statusText));
+            });
+            req.addEventListener("error", function(){
+                fail(new Error("error net"));
+            });
+            req.send(null);
+        });
+    }
+    get("content.txt").then(function (text) {
+        console.log("content.txt " + text);
+    }, function(error){
+        console.log("nie udalo sie pobrac pliku " +error);
+    });
+</script>
+</body>
+</html>

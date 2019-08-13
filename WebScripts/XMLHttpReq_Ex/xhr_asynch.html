@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>asyn</title>
+</head>
+<body>
+<script>
+    var req=new XMLHttpRequest();
+    req.open("GET","content.txt",true)
+    req.addEventListener("load", function(){
+        console.log("jest", req.status)
+    });
+    req.send(null);
+</script>
+</body>
+</html>

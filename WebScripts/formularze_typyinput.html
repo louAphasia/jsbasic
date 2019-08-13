@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>input types</title>
+</head>
+<body>
+<textarea> abcdef </textarea>
+<p><select MULTIPLE>
+    <option value="1">0001</option>
+    <option value="2">0010</option>
+    <option value="3">0100</option>
+    <option value="8">1000</option>
+</select>=<span id="out">0</span></p>
+
+    <option>jedna sztuka</option></select>
+<p><input type="text" value="wpisz imie" autofocus> name </p>
+<p><input type="password" value="abcde"></p>
+<p><input type="checkbox" checked> checkbox</p>
+<p><input type="radio" value="BBB" checked> radio type</p>
+<p><input type="file" checked> file </p>
+<p><input type="text" disabled> </p>
+<button disabled>szukaj</button>
+
+<!-- calosciowy formularz -->
+<form> <!-- form.elements[1]  lub form.elements.name lub pass.type -->
+    <P>NAME  <input TYPE="text"name="name"></P>
+    <P>PASSWORD <INPUT TYPE="password" name="pass"></P>
+    <button type="submit"> ZALOGUJ</button>
+</form>
+<p></p>
+
+<script>
+   var ta=document.querySelector("textarea");
+
+   ta.addEventListener("keydown", function (event) {
+       if(event.keyCode==113){
+           replaceSelectPart(ta,"zamina");
+           event.preventDefault();
+       }
+   });
+   function replaceSelectPart(field, word) {
+       var from=field.selectionStart, to=field.selectionEnd;
+       field.value=field.value.slice(0,from) + word + field.value.slice(to);
+       field.selectionStart=field.selectionEnd=from+  word.length; //ustawia kursor
+   }
+// select option code
+    var sel=document.querySelector("select");
+   var out=document.querySelector("#out");
+   sel.addEventListener("change",function(){
+       var nr=0;
+       for(var i=0;i<sel.options.length;i++){
+           var option=sel.options[i];
+           if(option.selected)
+               nr+=Number(option.value)
+       }
+       out.textContent=nr;
+   });
+</script>
+
+
+</body>
+</html>
