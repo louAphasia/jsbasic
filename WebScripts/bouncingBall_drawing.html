@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bouncing ball</title>
+</head>
+<body>
+<canvas width="400" height="400"></canvas>
+
+<script>
+    const roundDown=num=>{
+        return Math.floor(num);
+    };
+
+    const roundUp=num=>{
+        return Math.floor(num+0.5);
+    };
+
+    let cx=document.querySelector("canvas").getContext("2d");
+    //draw the box
+    let xOffset=50;
+    let yOffset=50;
+    let height=200;
+    let width=200;
+    let xMin=xOffset;
+    let yMin=yOffset;
+    let xMax=xOffset+width;
+    let yMax=yOffset+height;
+    let ballRadius=14;
+    let ballXPos=xMax/2+xMin;
+    let ballYPos=yMax/2+yMin;
+    let ballangle= Math.random()*2*Math.PI;
+    let speed=3;
+    let borderWidth=4;
+    let innerXMin=xMin+ roundUp(borderWidth/2);
+    let innerXMax=xMax+ roundUp(borderWidth/2)*2;
+    let innerYMin=yMin+ roundUp(borderWidth/2);
+    let innerYMax=yMax+  roundUp(borderWidth/2)*2;
+    let ballXMin = innerXMin+ballRadius;
+    let ballXMax= innerXMax+xOffset+roundDown(borderWidth/2)-ballRadius;
+    let ballYMin=innerYMin+ballRadius;
+    let ballYMax=innerYMax+yOffset+roundDown(borderWidth/2)-ballRadius;
+
+    //draw the box
+    cx.strokeStyle='blue';
+    cx.lineWidth=borderWidth;
+    cx.strokeRect(xMin,yMin,xMax,yMax)
+    cx.moveTo(ballXPos,ballYPos)  //move to centere where ball start
+
+    let lastTime=null;
+    function frame(time) {
+        if(lastTime!=null){
+            updateAnimation(Math.min(100,time-lastTime)/1000);
+        }
+        lastTime=time;
+        requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+
+    function updateAnimation(step){
+        //animate ball
+        let xInc=Math.cos(ballangle)*speed;
+        let yInc=Math.sin(ballangle)*speed;
+        if(ballXPos+xInc<ballXMin){
+            ballangle=Math.PI-ballangle;
+            xInc=ballXMin-ballXPos-xInc;
+        };
+        if(ballXPos+xInc>ballXMax){
+            ballangle=Math.PI-ballangle;
+            xInc=ballXMax-ballXPos-xInc;
+        };
+        if (ballYPos+yInc<ballYMin){
+            ballangle=2*Math.PI-ballangle;
+            yInc=ballYMin-ballYPos-yInc;
+        };
+        if(ballYPos+yInc>ballYMax){
+            ballangle=2*Math.PI-ballangle;
+            yInc=ballYMax-ballYPos-yInc;
+        };
+        ballXPos+=xInc;
+        ballYPos+=yInc;
+        cx.clearRect(innerXMin,innerYMin,innerXMax,innerYMax);
+        cx.fillStyle='red';
+        cx.beginPath();
+        cx.arc(ballXPos,ballYPos,ballRadius,0,2*Math.PI);
+        cx.fill();
+    }
+</script>
+</body>
+</html>

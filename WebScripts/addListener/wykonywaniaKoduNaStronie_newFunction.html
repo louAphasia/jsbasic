@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>wykonywanie kodu JS na stronir</title>
+</head>
+<body>
+<textarea id="code"> return "hi";</textarea>
+<button id="butt">RUN</button>
+<pre id="output"></pre>
+
+<script>
+    let button=document.getElementById("butt");
+    let code=document.getElementById('code');
+    let output=document.getElementById("output")
+
+    button.addEventListener('click', ()=> {
+        let result;
+        try {
+            let fn=new Function(code.value);
+            result=fn.call().toString();
+        }
+        catch(e){
+            result=e.message;
+        }
+        finally {
+            output.textContent=result;
+        }
+    })
+</script>
+</body>
+</html>

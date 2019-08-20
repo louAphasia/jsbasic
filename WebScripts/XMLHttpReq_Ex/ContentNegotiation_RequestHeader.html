@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Content negotiation</title>
+</head>
+<body>
+
+<script>
+    //serwer jakiego typu content /roznych wersji dokumentu wybrac
+    //okreslenie która wersja najlepiej odpowiada ich wlasciwosciom
+    let aboutURL='https://eloquentjavascript.net/author'
+    let mediatypes=[
+        'text/plain',
+        'text/html',
+        'application/json',
+        'application/rainbow+unicorns'
+    ];
+
+    async function getResponseMediaType(url, type){
+        let r=await fetch(url, {headers:{'accept':type}});
+        r=await r.text();
+        console.log('\n ---type: ${type}-------- \n', r);
+    };
+
+    for (let type of mediatypes){
+        getResponseMediaType(aboutURL,type)
+    };
+</script>
+</body>
+</html>
