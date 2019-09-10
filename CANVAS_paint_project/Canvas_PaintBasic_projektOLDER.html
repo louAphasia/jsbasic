@@ -57,10 +57,16 @@
     };
     function trackDrag(onMove,onEnd) {
         function end(event) {
-        }
             removeEventListener("mousemove", onMove);
             removeEventListener("mouseup", end);
+            if (onEnd)
+                onEnd(event);
         }
+
+        addEventListener("mousemove", onMove);
+        addEventListener("mouseup", end)
+    }
+
         tools.Linia=function (event,cx,onEnd) {
             cx.lineCap="round";
 
@@ -116,6 +122,79 @@ return elt("span", null, "Rozmiar pedzla : ", select);
         return link;
     };
     //wczytanie obrazow z plikow
+    function loadImageURL(cx,url){
+        var image=document.createElement("img");
+        image.addEventListener("load",function() {
+            var color=cx.fillStyle,size=cx.lineWidth;
+            cx.canvas.width=image.width;
+            cx.canvas.height=image.height;
+            cx.drawImage(image,0,0);
+            cx.fillStyle=color;;
+            cx.strokeStyle=color;
+            cx.lineWidth=size;
+        });
+        image.src=url;
+    }
+    //openFile wczytywanie pliku lokalnego
+    controls.openFile=function (cx) {
+        var input=elt("input",{type:"file"});
+        input.addEventListener("change", function () {
+            if(input.files.length==0)return;
+            var reader=new FileReader();
+            reader.addEventListener("load",function(){
+                loadImageURL(cx,reader.result)
+            });
+            reader.readAsDataURL(input.files[0]);
+        });
+        return elt("div",null,"Otworz plik: ", input)
+    };
+    //openURL wczytywanie pliku z adresu url
+    controls.openURL=function (cx) {
+        var input=elt("input",{type:"text"});
+        var form =elt("form",nyll,"URL obrazu ", input,elt("button",{type:"submit"}, " Wczytaj"));
+        form.addEventListener("submit",function(event){
+            event.preventDefault();
+            loadImageURL(cx,form.querySelector("input").value);
+        });
+        return form;
+    };
+    //okienko do wpisania tekstu do narysowania w obrazie
+    tools.Tekst=function (event,cx) {
+        var text=prompt("Tekst: ", "");
+        if (text){
+            var pos= relativePos(event,cx.canvas);
+            cx.font=Math.max(7,cx.lineWidth)+"px sans-serif";
+            cx.fillText(text,pos.x,pos.y);
+        }
+    };
+    //rozpylacz
+    tools.rozpylacz=function (event,cx) {
+        var radius=cx.lineWidth/2;
+        var area=radius*Math.PI;
+        var dotsPerTick=Math.ceil(area/30);
+
+        var currentPos=relativePos(event,cx.canvas);
+        var spray=setInterval(function(){
+            for(var i=0;i<dotsPerTick;i++){
+                var offset=randomPointInRadius(radius);
+                cx.fillRect(currentPos.x+offset.x,
+                currentPos.y+offset.y,1,1);
+            }
+        },25);
+        trackDrag(function(event) {
+            currentPos=relativePos(event,cx.canvas)
+        },function () {
+            clearInterval(spray)
+        })
+        function randomPointInRadius(radius) {
+            for(;;){
+                var x=Math.random()*2-1;
+                var y=Math.random()*2-1;
+                if(x*x+y*y,=1)
+                    return {x:x*radius,y:y*radius}
+            }
+        }
+    }
 </script>
 </body>
 </html>

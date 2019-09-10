@@ -20,3 +20,4 @@ console.log(o2);
 const o3=Object.assign({},o1);
 o1.a=3;
 console.log(o3);
+

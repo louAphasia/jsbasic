@@ -5,7 +5,7 @@
     <title>Canvas_PaintBasic_projekt NEWER MH ELOQUENT book</title>
 </head>
 <body>
-
+<div></div>
 <script>
     //the state object with picture tool color properties
 class Picture{
@@ -33,8 +33,7 @@ class Picture{
 function updateState(state,action){
     return Object.assign({},state,action)
 }
-//dom model
-    function elt(type,props,...children){
+function elt(type,props,...children){
     let dom=document.createElement(type);
     if(props) Object.assign(dom,props);
     for(let child of children){
@@ -44,13 +43,7 @@ function updateState(state,action){
     return dom
     }
 
-</script>
-<script>
-    document.body.appendChild(elt("button", {
-        onclick: () => console.log("click")
-    }, "The button"));
-</script>
-<script>
+
     //the canvas
     const scale=10;
 
@@ -172,7 +165,7 @@ function updateState(state,action){
     //DRAWING TOOLS
     function draw(pos,state,dispatch){
         function drawPixel({x,y},state){
-            let draw={x,ycolor:state.color};
+            let draw={x,y,color:state.color};
             dispatch({picture:state.picture.draw([draw])});
         }
         drawPixel(pos,state);
@@ -206,8 +199,8 @@ function updateState(state,action){
                 let x=drawn[done].x +dx,y=drawn[done].y+dy;
                 if(x>=0&&x<state.picture.width&&
                 y>=0 && y<state.picture.height&&
-                state.picture.pixel(x,y)==targetColor&&
-                !drawn.some(p=>p.x==x&&p.y==y)){
+                state.picture.pixel(x,y)== targetColor &&
+                !drawn.some(p=>p.x==x && p.y==y)){
                     drawn.push({x,y,color:state.color});
                 }
             }
@@ -315,7 +308,35 @@ function updateState(state,action){
         }
     }
     //  >>>>>>>>> LETS DRAW MAIN
+const startState={
+        tool:"draw",
+        color: "#000000",
+    picture: Picture.empty(60,30,"#f0f0f0"),
+    done: [],
+    doneAt:0
+};
+    const baseTools={draw,fill,rectangle,pick};
+    const baseControls=[
+        ToolSelect, ColorSelect,SaveButton,LoadButton,UndoButton
+    ];
+    function startPixelEditor({state=startState,
+                              tools=baseTools,
+                              controls=baseControls}) {
+        let app=new PictureEditor(state, {
+            tools,
+            controls,
+            dispatch(action){
+                state=historyUpdateState(state,action);
+                app.syncState(state);
+            }
+        });
+        return app.dom;
 
+    }
+
+
+
+    document.querySelector("div").appendChild(startPixelEditor({}))
 </script>
 </body>
 </html>

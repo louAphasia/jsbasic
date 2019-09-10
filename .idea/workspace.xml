@@ -2,13 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22ff30d6-f8dd-484a-8c73-e01fcf88b635" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CANVAS_paint_project/Canvas_PaintBasic_projekt2018.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CANVAS_paint_project/Canvas_PaintBasic_projektOLDER.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebScripts/XMLHttpReq_Ex/ContentNegotiation_RequestHeader.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebScripts/addListener/wykonywaniaKoduNaStronie_newFunction.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebScripts/bouncingBall_drawing.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obiekty/Looping_triangle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/generatorNextJS.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodeJS/APIgenCatchTryAwaitPromise.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodeJS/APIgeneratorPromise.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodeJS/asyncWorkAwait.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodeJS/doWork.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodeJS/emitterNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodeJS/emitterNodeSerwer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodeJS/nodeAsyncReadFile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodeJS/pies.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodeJS/pies3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodeJS/spreadRestOperator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/websocket/Client.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/websocket/ServerWS.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CANVAS_paint_project/Canvas_PaintBasic_projekt2018.html" beforeDir="false" afterPath="$PROJECT_DIR$/CANVAS_paint_project/Canvas_PaintBasic_projekt2018.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CANVAS_paint_project/Canvas_PaintBasic_projektOLDER.html" beforeDir="false" afterPath="$PROJECT_DIR$/CANVAS_paint_project/Canvas_PaintBasic_projektOLDER.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataObj.js" beforeDir="false" afterPath="$PROJECT_DIR$/DataObj.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebScripts/BOMex.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebScripts/BOMex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebScripts/input_FILE_addNote_Promises.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebScripts/input_FILE_addNote_Promises.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,37 +38,87 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebScripts/input_FILE_addNote_Promises.html">
+        <entry file="file://$PROJECT_DIR$/nodeJS/nodeAsyncReadFile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1265">
-              <caret line="55" column="30" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
+            <state relative-caret-position="115">
+              <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CANVAS_paint_project/Canvas_PaintBasic_projektOLDER.html">
+        <entry file="file://$PROJECT_DIR$/nodeJS/doWork.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nodeJS/emitterNode.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2691">
-              <caret line="117" column="32" selection-start-line="117" selection-start-column="32" selection-end-line="117" selection-end-column="32" />
+            <state relative-caret-position="184">
+              <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nodeJS/emitterNodeSerwer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generatorNextJS.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nodeJS/APIgeneratorPromise.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="18" lean-forward="true" selection-end-line="29" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CANVAS_paint_project/Canvas_PaintBasic_projekt2018.html">
+        <entry file="file://$PROJECT_DIR$/nodeJS/APIgenCatchTryAwaitPromise.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="573">
-              <caret line="304" column="5" lean-forward="true" selection-start-line="304" selection-start-column="5" selection-end-line="304" selection-end-column="5" />
+            <state relative-caret-position="529">
+              <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/obiekty/Looping_triangle.html">
+        <entry file="file://$PROJECT_DIR$/websocket/Client.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1173">
-              <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+            <state relative-caret-position="230">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/websocket/ServerWS.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nodeJS/asyncWorkAwait.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -66,9 +128,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="tsconfig.json" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -78,25 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/WebScripts/addLiist/web.html" />
-        <option value="$PROJECT_DIR$/WebScripts/addLiist/zachowanie.js" />
-        <option value="$PROJECT_DIR$/WebScripts/DOM_fun.js" />
-        <option value="$PROJECT_DIR$/WebScripts/XMLHttpReq_Ex/content.html" />
-        <option value="$PROJECT_DIR$/WebScripts/replaceAtt.html" />
-        <option value="$PROJECT_DIR$/WebScripts/arrayZnode.js" />
-        <option value="$PROJECT_DIR$/WebScripts/replace_AddInfo.html" />
-        <option value="$PROJECT_DIR$/WebScripts/countArea.html" />
-        <option value="$PROJECT_DIR$/WebScripts/css-js.html" />
-        <option value="$PROJECT_DIR$/obiekty/generators.js" />
-        <option value="$PROJECT_DIR$/obiekty/ForOfIn.js" />
-        <option value="$PROJECT_DIR$/first.js" />
-        <option value="$PROJECT_DIR$/WebScripts/tablegenerate.html" />
-        <option value="$PROJECT_DIR$/WebScripts/addListener/obiektyEvents.html" />
-        <option value="$PROJECT_DIR$/WebScripts/addListener/stopPropag_eventTarget.html" />
-        <option value="$PROJECT_DIR$/WebScripts/addListener/zachowanie.js" />
-        <option value="$PROJECT_DIR$/WebScripts/addListener/keyEvents_DefaultPrevention.html" />
-        <option value="$PROJECT_DIR$/WebScripts/addListener/event scrolling.html" />
-        <option value="$PROJECT_DIR$/WebScripts/addListener/eventAction.html" />
         <option value="$PROJECT_DIR$/WebScripts/addListener/MousePointer_events.html" />
         <option value="$PROJECT_DIR$/WebScripts/setTime.html" />
         <option value="$PROJECT_DIR$/WebScripts/clearTime_opoznienieWyzwalaniaEvents.html" />
@@ -120,15 +163,34 @@
         <option value="$PROJECT_DIR$/WebScripts/formularze_typyinput.html" />
         <option value="$PROJECT_DIR$/test.txt" />
         <option value="$PROJECT_DIR$/WebScripts/input_file.html" />
-        <option value="$PROJECT_DIR$/WebScripts/input_FILE_addNote_Promises.html" />
         <option value="$PROJECT_DIR$/WebScripts/usefulScripts_Web/podpowiedzi_text_inputform.html" />
         <option value="$PROJECT_DIR$/WebScripts/XMLHttpReq_Ex/ContentNegotiation_RequestHeader.html" />
         <option value="$PROJECT_DIR$/WebScripts/addListener/wykonywaniaKoduNaStronie_newFunction.html" />
         <option value="$PROJECT_DIR$/WebScripts/bouncingBall_drawing.html" />
         <option value="$PROJECT_DIR$/CANVAS_paint_project/Canvas_PaintBasic_projekt.html" />
         <option value="$PROJECT_DIR$/obiekty/Looping_triangle.html" />
-        <option value="$PROJECT_DIR$/CANVAS_paint_project/Canvas_PaintBasic_projektOLDER.html" />
         <option value="$PROJECT_DIR$/CANVAS_paint_project/Canvas_PaintBasic_projekt2018.html" />
+        <option value="$PROJECT_DIR$/CANVAS_paint_project/Canvas_PaintBasic_projektOLDER.html" />
+        <option value="$PROJECT_DIR$/WebScripts/input_FILE_addNote_Promises.html" />
+        <option value="$PROJECT_DIR$/DataObj.js" />
+        <option value="$PROJECT_DIR$/WebScripts/BOMex.html" />
+        <option value="$PROJECT_DIR$/nodeJS/nodeEx.js" />
+        <option value="$PROJECT_DIR$/nodeJS/pies.txt" />
+        <option value="$PROJECT_DIR$/nodeJS/pies3.txt" />
+        <option value="$PROJECT_DIR$/nodeJS/nodeAsyncReadFile.js" />
+        <option value="$PROJECT_DIR$/nodeJS/asyncAction.js" />
+        <option value="$PROJECT_DIR$/nodeJS/aAction.js" />
+        <option value="$PROJECT_DIR$/nodeJS/asyncWorkAwait.js" />
+        <option value="$PROJECT_DIR$/nodeJS/doWork.js" />
+        <option value="$PROJECT_DIR$/nodeJS/emitterNode.js" />
+        <option value="$PROJECT_DIR$/websocket/server.js" />
+        <option value="$PROJECT_DIR$/websocket/Client.html" />
+        <option value="$PROJECT_DIR$/websocket/ServerWS.js" />
+        <option value="$PROJECT_DIR$/nodeJS/emitterNodeSerwer.js" />
+        <option value="$PROJECT_DIR$/generatorNextJS.js" />
+        <option value="$PROJECT_DIR$/nodeJS/lll.html" />
+        <option value="$PROJECT_DIR$/nodeJS/APIgeneratorPromise.js" />
+        <option value="$PROJECT_DIR$/nodeJS/APIgenCatchTryAwaitPromise.js" />
       </list>
     </option>
   </component>
@@ -139,8 +201,8 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="55" />
-    <option name="y" value="100" />
+    <option name="x" value="-33" />
+    <option name="y" value="72" />
     <option name="width" value="1100" />
     <option name="height" value="935" />
   </component>
@@ -162,35 +224,17 @@
             <path>
               <item name="_jsBasic" type="b2602c69:ProjectViewProjectNode" />
               <item name="_jsBasic" type="462c0819:PsiDirectoryNode" />
-              <item name="CANVAS_paint_project" type="462c0819:PsiDirectoryNode" />
+              <item name="nodeJS" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="_jsBasic" type="b2602c69:ProjectViewProjectNode" />
               <item name="_jsBasic" type="462c0819:PsiDirectoryNode" />
-              <item name="obiekty" type="462c0819:PsiDirectoryNode" />
+              <item name="websocket" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="_jsBasic" type="b2602c69:ProjectViewProjectNode" />
               <item name="_jsBasic" type="462c0819:PsiDirectoryNode" />
-              <item name="WebScripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="_jsBasic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="_jsBasic" type="462c0819:PsiDirectoryNode" />
-              <item name="WebScripts" type="462c0819:PsiDirectoryNode" />
-              <item name="addListener" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="_jsBasic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="_jsBasic" type="462c0819:PsiDirectoryNode" />
-              <item name="WebScripts" type="462c0819:PsiDirectoryNode" />
-              <item name="usefulScripts_Web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="_jsBasic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="_jsBasic" type="462c0819:PsiDirectoryNode" />
-              <item name="WebScripts" type="462c0819:PsiDirectoryNode" />
-              <item name="XMLHttpReq_Ex" type="462c0819:PsiDirectoryNode" />
+              <item name="WZORCE PROJEKTOWE" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -228,36 +272,36 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.promisesWrap_getJSON.html">
-    <configuration name="obiektyEvents.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/_jsBasic/WebScripts/addListener/obiektyEvents.html">
+  <component name="RunManager" selected="Node.js.APIgeneratorPromise.js">
+    <configuration name="lll.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8000/_jsBasic/nodeJS/lll.html">
       <method v="2" />
     </configuration>
-    <configuration name="promisesWrap_getJSON.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/_jsBasic/WebScripts/XMLHttpReq_Ex/promisesWrap_getJSON.html">
+    <configuration name="APIgeneratorPromise.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/nodeJS/APIgeneratorPromise.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="obslugaErrorReq_wrapped.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/WebScripts/XMLHttpReq_Ex/obslugaErrorReq_wrapped.js" working-dir="$PROJECT_DIR$">
+    <configuration name="emitterNodeSerwer.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/nodeJS/emitterNodeSerwer.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="xmlhttpreq.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/WebScripts/XMLHttpReq_Ex/xmlhttpreq.js" working-dir="$PROJECT_DIR$">
+    <configuration name="emitterNode.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/nodeJS/emitterNode.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="zachowanie.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/WebScripts/addListener/zachowanie.js" working-dir="$PROJECT_DIR$">
+    <configuration name="generatorNextJS.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/generatorNextJS.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JavaScript Debug.obiektyEvents.html" />
-      <item itemvalue="JavaScript Debug.promisesWrap_getJSON.html" />
-      <item itemvalue="Node.js.zachowanie.js" />
-      <item itemvalue="Node.js.xmlhttpreq.js" />
-      <item itemvalue="Node.js.obslugaErrorReq_wrapped.js" />
+      <item itemvalue="Node.js.emitterNode.js" />
+      <item itemvalue="Node.js.emitterNodeSerwer.js" />
+      <item itemvalue="Node.js.generatorNextJS.js" />
+      <item itemvalue="Node.js.APIgeneratorPromise.js" />
+      <item itemvalue="JavaScript Debug.lll.html" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.promisesWrap_getJSON.html" />
-        <item itemvalue="Node.js.obslugaErrorReq_wrapped.js" />
-        <item itemvalue="Node.js.xmlhttpreq.js" />
-        <item itemvalue="Node.js.zachowanie.js" />
-        <item itemvalue="JavaScript Debug.obiektyEvents.html" />
+        <item itemvalue="Node.js.APIgeneratorPromise.js" />
+        <item itemvalue="JavaScript Debug.lll.html" />
+        <item itemvalue="Node.js.generatorNextJS.js" />
+        <item itemvalue="Node.js.emitterNodeSerwer.js" />
+        <item itemvalue="Node.js.emitterNode.js" />
       </list>
     </recent_temporary>
   </component>
@@ -283,7 +327,8 @@
       <workItem from="1564045876955" duration="8078000" />
       <workItem from="1564390086966" duration="15606000" />
       <workItem from="1564645946792" duration="88946000" />
-      <workItem from="1566249740128" duration="5520000" />
+      <workItem from="1566249740128" duration="29040000" />
+      <workItem from="1567811594718" duration="18140000" />
     </task>
     <task id="LOCAL-00001" summary="function">
       <created>1562266329569</created>
@@ -446,11 +491,18 @@
       <option name="project" value="LOCAL" />
       <updated>1565686576528</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="PAINT 1/2">
+      <created>1566292217631</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1566292217631</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="261061000" />
+    <option name="totallyTimeSpent" value="302721000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -462,15 +514,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.79558825" visible="true" weight="0.17118308" />
-      <window_info id="Structure" order="1" sideWeight="0.20441176" side_tool="true" visible="true" weight="0.17118308" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.79558825" visible="true" weight="0.16787839" />
+      <window_info id="Structure" order="1" sideWeight="0.20441176" side_tool="true" weight="0.17118308" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.40588236" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24117647" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -551,169 +603,10 @@
     <MESSAGE value="book 2 event mouse" />
     <MESSAGE value="event scroll important useful" />
     <MESSAGE value="addNotes promise input file" />
-    <option name="LAST_COMMIT_MESSAGE" value="addNotes promise input file" />
+    <MESSAGE value="PAINT 1/2" />
+    <option name="LAST_COMMIT_MESSAGE" value="PAINT 1/2" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/WebScripts/BOMex.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WZORCE PROJEKTOWE/SINGLETON.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebScripts/XMLHttpReq_Ex/content.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebScripts/DOMObj1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebScripts/addListener/web.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebScripts/css_js_animatefotoeclipse.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebScripts/countArea.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="43" column="33" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
-          <folding>
-            <element signature="n#style#0;n#p#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSONbasic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/obiekty/generators.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/obiekty/ForOfIn.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/first.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="13" column="94" selection-start-line="13" selection-start-column="94" selection-end-line="13" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebScripts/tablegenerate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
-          <folding>
-            <element signature="n#style#0;n#col#0;n#colgroup#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#caption#0;n#table#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebScripts/addListener/stopPropag_eventTarget.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebScripts/addListener/zachowanie.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebScripts/addListener/keyEvents_DefaultPrevention.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="22" column="52" lean-forward="true" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebScripts/usefulScripts_Web/scrollEvent_pasekczytaniaIMPORTANT.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebScripts/addListener/MousePointer_events.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebScripts/addListener/obiektyEvents.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="9" column="134" selection-start-line="9" selection-start-column="134" selection-end-line="9" selection-end-column="134" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebScripts/setTime.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebScripts/clearTime_opoznienieWyzwalaniaEvents.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebScripts/fraktal_Canvas.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebScripts/usefulScripts_Web/mouseMove_xyKursora_IMPORTANT.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -864,13 +757,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebScripts/bouncingBall_drawing.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="711">
-          <caret line="45" column="29" lean-forward="true" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebScripts/addListener/wykonywaniaKoduNaStronie_newFunction.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-161">
@@ -878,31 +764,172 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/obiekty/Looping_triangle.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataObj.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1004" lean-forward="true" selection-start-line="1004" selection-end-line="1004" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WebScripts/input_FILE_addNote_Promises.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1265">
-          <caret line="55" column="30" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
+        <state>
+          <caret line="36" column="50" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#textarea#0;n#p#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeJS/spreadRestOperator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeJS/pies3.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeJS/pies.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CANVAS_paint_project/Canvas_PaintBasic_projektOLDER.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2691">
-          <caret line="117" column="32" selection-start-line="117" selection-start-column="32" selection-end-line="117" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/obiekty/Looping_triangle.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+        <state relative-caret-position="92">
+          <caret line="4" column="56" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CANVAS_paint_project/Canvas_PaintBasic_projekt2018.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="304" column="5" lean-forward="true" selection-start-line="304" selection-start-column="5" selection-end-line="304" selection-end-column="5" />
+        <state relative-caret-position="3082">
+          <caret line="134" column="8" selection-start-line="134" selection-start-column="8" selection-end-line="134" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebScripts/bouncingBall_drawing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="45" column="29" lean-forward="true" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebScripts/BOMex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Net_Cases/findProxyForURL.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeJS/pies.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeJS/aAction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websocket/server.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeJS/doWork.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeJS/asyncWorkAwait.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websocket/Client.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websocket/ServerWS.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeJS/emitterNode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeJS/nodeAsyncReadFile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeJS/emitterNodeSerwer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generatorNextJS.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeJS/lll.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeJS/APIgeneratorPromise.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="18" lean-forward="true" selection-end-line="29" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeJS/APIgenCatchTryAwaitPromise.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
         </state>
       </provider>
     </entry>
