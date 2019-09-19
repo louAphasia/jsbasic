@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22ff30d6-f8dd-484a-8c73-e01fcf88b635" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nodeJS/HTTPmodule/HTTPClient.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nodeJS/HTTPmodule/HTTPserver.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nodeJS/HTTPmodule/METHODY_file-newest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nodeJS/HTTPmodule/METHODY_fileSharingServer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nodeJS/HTTPmodule/StreamClient.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nodeJS/HTTPmodule/StreamsServer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nodeJS/grable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nodeJS/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodeJS/HTTPmodule/file_serv_promises.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -29,15 +20,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nodeJS/emitterNode.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nodeJS/APIgenCatchTryAwaitPromise.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -83,11 +65,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nodeJS/HTTPmodule/METHODY_fileSharingServer.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="573">
               <caret line="63" column="1" lean-forward="true" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nodeJS/HTTPmodule/file_serv_promises.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="573">
+              <caret line="94" column="2" selection-start-line="94" selection-start-column="2" selection-end-line="94" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -126,8 +117,8 @@
       <list>
         <option value="tsconfig.json" />
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="package.json" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -137,8 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/WebScripts/XMLHttpReq_Ex/xhr_asynch.html" />
-        <option value="$PROJECT_DIR$/WebScripts/XMLHttpReq_Ex/obslugaErrorReq_wrapped.js" />
         <option value="$PROJECT_DIR$/WebScripts/addListener/obslugaAsynchNiudaneRequest_wrapped.html" />
         <option value="$PROJECT_DIR$/WebScripts/XMLHttpReq_Ex/obslugaAsynchNiudaneRequest_wrapped.html" />
         <option value="$PROJECT_DIR$/WebScripts/XMLHttpReq_Ex/promises_wrapGET.html" />
@@ -188,6 +177,8 @@
         <option value="$PROJECT_DIR$/nodeJS/HTTPmodule/publicfileaccess.js" />
         <option value="$PROJECT_DIR$/nodeJS/HTTPmodule/METHODY_file-newest.js" />
         <option value="$PROJECT_DIR$/nodeJS/HTTPmodule/METHODY_fileSharingServer.js" />
+        <option value="$PROJECT_DIR$/nodeJS/file_serv_promises.js" />
+        <option value="$PROJECT_DIR$/nodeJS/HTTPmodule/file_serv_promises.js" />
       </list>
     </option>
   </component>
@@ -274,6 +265,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Pliki\_jsBasic\nodeJS\HTTPmodule" />
       <recent name="D:\Pliki\_jsBasic\nodeJS" />
       <recent name="D:\Pliki\_jsBasic\WebScripts\usefulScripts_Web" />
       <recent name="D:\Pliki\_jsBasic\WebScripts\XMLHttpReq_Ex" />
@@ -350,7 +342,7 @@
       <workItem from="1566249740128" duration="29040000" />
       <workItem from="1567811594718" duration="19739000" />
       <workItem from="1568396587694" duration="18876000" />
-      <workItem from="1568737552926" duration="1609000" />
+      <workItem from="1568737552926" duration="6117000" />
     </task>
     <task id="LOCAL-00001" summary="function">
       <created>1562266329569</created>
@@ -527,11 +519,18 @@
       <option name="project" value="LOCAL" />
       <updated>1568108884077</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="methodsGET HTTPnode">
+      <created>1568799630368</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1568799630369</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="324805000" />
+    <option name="totallyTimeSpent" value="329313000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -609,7 +608,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="function" />
     <MESSAGE value="object" />
     <MESSAGE value=" function" />
     <MESSAGE value="regexp" />
@@ -634,16 +632,10 @@
     <MESSAGE value="addNotes promise input file" />
     <MESSAGE value="PAINT 1/2" />
     <MESSAGE value="AWAITPROMISE FETCH" />
-    <option name="LAST_COMMIT_MESSAGE" value="AWAITPROMISE FETCH" />
+    <MESSAGE value="methodsGET HTTPnode" />
+    <option name="LAST_COMMIT_MESSAGE" value="methodsGET HTTPnode" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/WebScripts/XMLHttpReq_Ex/xmlhttpr.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="12" column="120" selection-start-line="12" selection-start-column="120" selection-end-line="12" selection-end-column="120" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebScripts/addListener/eventAction_helpfields_formularzIMPORTANT.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="412">
@@ -950,6 +942,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="573">
           <caret line="63" column="1" lean-forward="true" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeJS/HTTPmodule/file_serv_promises.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="573">
+          <caret line="94" column="2" selection-start-line="94" selection-start-column="2" selection-end-line="94" selection-end-column="2" />
         </state>
       </provider>
     </entry>
