@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EX1</title>
+</head>
+<body>
+<H4>DANE Z API</H4>
+<p id="demo">Tutaj będą dane z API</p>
+<div>
+    <h4>Adres URL, dane dodane z POST</h4>
+    <a id="url">---</a>
+</div>
+<hr>
+<button onclick="loadData()">Wczytaj dane</button>
+<button onclick="addCom()"> Dodaj komentarz</button>
+<script>
+
+    function loadData() {
+        var xh = new XMLHttpRequest();
+        xh.onreadystatechange = function () {
+            if (xh.readyState == 4) {
+                document.getElementById("demo").innerHTML = xh.responseText;
+            }
+        };
+        xh.open("GET", "https://api.myjson.com/bins/n7igh", true);
+        xh.send();
+    }
+
+    function addCom(){
+        var xh=new XMLHttpRequest();
+        xh.onreadystatechange=function(){
+            if(xh.readyState==4){
+                var uri=JSON.parse(xh.responseText).uri;
+                document.getElementById("url").innerHTML=uri;
+                document.getElementById("url").href=uri;
+            }
+        };
+        xh.open("POST", "https://api.myjson.com/bins", true)
+        xh.setRequestHeader("Content-type","application/json");
+        xh.send(JSON.stringify({"userid":"2359", "content":"Moim zdaniem..."}))
+    }
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- nie dziala add agent i dziwnie updatuje się -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+<h4> dane </h4>
+<p id="demo"> ASDF</p>
+<div> <h4>adres URL dodany metoda POST</h4>
+<a id="url">---</a>
+</div>
+<hr>
+<button onclick="addAgent()"> Dodaj agenta</button>
+<button onclick="updateFruit()"> zmien owoce</button>
+
+<script>
+    function loadAjax(){
+        $("#demo").load("https:\\api.myjson.com/bins/n7igh")
+    }
+
+    function addAgent() {
+        $.ajax({ contentType:"application/json", type:"POST",
+        url:"https:\\api.myjson.com/bins/n7igh",
+            data: JSON.stringify({"agent":"jb", "nr":7}),
+            success: function (result) {
+                $("#url").text(result.uri);
+                $("#url").attr("href",result.uri)
+            }
+        });
+    }
+
+    function updateFruit(){
+        $.ajax({contentType: "application/json",
+        type: "PUT",
+        url:"https:\\api.myjson.com/bins/n7igh",
+        data: JSON.stringify({"nazwa": "ape", "amount":3.5})});
+    }
+    loadAjax();
+
+</script>
+</body>
+</html>

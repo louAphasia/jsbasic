@@ -2,6 +2,9 @@
   "name": "_jsBasic",
   "version": "1.0.0",
   "dependencies": {
-    "mime": "latest"
+    "figlet": "^1.2.4",
+    "mime": "latest",
+    "selenium-webdriver": "^4.0.0-alpha.5",
+    "stringify-object-extract-functions": "^2.4.1"
   }
 }
